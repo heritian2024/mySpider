@@ -153,7 +153,7 @@ def monitor_rooms():
             logger.info('##发送邮件##  链接：{}，标题：{}'.format(url, title))
             send_room_mail(url, title)
             time.sleep(5)
-        time.sleep(60 * random.randint(10, 30))
+        time.sleep(10 * random.randint(10, 30))
 
 
 if __name__ == '__main__':
