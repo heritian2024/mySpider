@@ -58,7 +58,8 @@ class DoubanSpider(object):
             yield node.get('href'), node.get('title')
 
     def get_room_desc_div(self, url):
-        response = requests.get(url=url)
+        response = requests.get(url=url,
+            headers=self.default_headers)
         if response.status_code != 200:
             logger.error('获取房子接口失败, url: {} rsp: {}'.format(url, response))
 
