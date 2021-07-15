@@ -1,0 +1,630 @@
+2021-07-14 11:59:40,223 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:天之骄子 with 地点 广兰路
+2021-07-14 11:59:40,232 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 11:59:40,610 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=634832&cat=1013 HTTP/1.1" 301 162
+2021-07-14 11:59:40,613 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 11:59:41,860 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=634832&cat=1013 HTTP/1.1" 200 None
+2021-07-14 11:59:41,876 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234195654/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 5200元 电梯房5楼 可租两年
+2021-07-14 11:59:41,876 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234058482/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租最小户型 电梯房中间层 3300元 可租到2022.4.20结束
+2021-07-14 11:59:41,876 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233903409/  title:天之骄子一房一厅出租
+2021-07-14 11:59:41,876 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233394339/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫其中北次独卫带阳台 2000元 电梯房5楼 一年一签 另一户住一男生
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914827/  title:出租|广兰路天之骄子
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231908323/  title:广兰路地铁站香楠小区主卧+次卧
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768274/  title:出租|广兰路天之骄子
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665391/  title:出租|广兰路天之骄子
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231253792/  title:天之骄子人才公寓68平原始一房一厅
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231179496/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨一卫 4200元 南北通透 双阳台 短租到2021.8.7或2021.11.7二选一
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229701877/  title:求租天之骄子
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229686006/  title:求租，一房合租/一室户整租，女
+2021-07-14 11:59:41,877 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227283657/  title:求广兰路天之娇子小户型短租6个月，6月入住
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061578/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226771831/  title:（本周六可看）广兰路地铁站步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 电梯房高层 5500元 一年一签
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226559519/  title:广兰路天之骄子，求短租，一个月，5/19日起租
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226426369/  title:《限女生》广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房17楼 可租一年两个月 4200元
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145827/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225902092/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 朝北 电梯房17楼 可租两年 4280元
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223279555/  title:2号线广兰路附近   玉兰香苑
+整租二室一厅5500多套
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/220063085/  title:天之骄子人才公寓 整租47平米一室户 3000元 朝西 6楼 可租三个月
+2021-07-14 11:59:41,878 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218943426/  title:天之骄子原始一房一厅整租4300元
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218614312/  title:2号线广兰路地铁口 天之骄子复式一房4800元 电梯高层 可住19个月 4月底可入住 代办居住证落户加微hyllry131415
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218191425/  title:广兰路地铁口 天之骄子人才公寓 整租最小户型 电梯房7楼 可租5个半月2800元
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/216929562/  title:2号线广兰路地铁口  天之骄子人才公寓复式两房88平 5k 可住两年 中间楼层 最好两女生
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/216808338/  title:天之骄子人才公寓 47平米一室户转租半年
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215921192/  title:（限女生）广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫 其中北卧，有阳台，独立卫生间和储藏室 2200元 可租两年
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215709876/  title:广兰路地铁口 天之骄子人才公寓 整租47平米 3300元 10楼电梯房 可租到 2022.3.13号
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/214411853/  title:广兰路地铁口500米 展讯中心 电梯房中间层 整租一房 4800元 包物业费
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/214411544/  title:广兰路地铁口 天之骄子人才公寓 整租一室户3200元 中间层电梯房 可租两年
+2021-07-14 11:59:41,879 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213764724/  title:广兰路地铁口 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房16楼 3800元 可租到12.18号
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213379303/  title:广兰路地铁口 天之骄子人才公寓 整租复试一房一厅一厨一卫 4300元 电梯房9楼 可租23个月
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213333151/  title:广兰路地铁口 天之骄子人才公寓 复试两房两卫其中北次独卫带阳台 1600元 另一户住一男生 可租一年
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/212570774/  title:广兰路地铁口 天之骄子人才公寓 整租最小户型 3000元 电梯房中间层 可租11个月 电话15800517320
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/212009829/  title:2号线广兰路地铁口  天之骄子人才公寓一室3300-4500  两室5000可咨询
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/211619294/  title:天之骄子人才公寓一室户出租
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/210459338/  title:2号线 广兰路地铁口 天之骄子人才公寓整租
+60平超大一室出租
+带阳台，租金3300不谈价
+懂得来，错过无！
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/209266832/  title:个人转租公寓、一室户、广兰路地铁口
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208762512/  title:2号线广兰路地铁口  天之骄子人才公寓一室户整租3200-4500   两室4600-5000  了解人才公寓的来
+2021-07-14 11:59:41,880 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208359566/  title:已租出
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208164539/  title:个人公寓转租：广兰路地铁口附近
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207833195/  title:玉兰香苑三期转租，超大主卧独卫，可两人入住，2400可刀
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207829555/  title:2号线广兰路地铁口  天之骄子人才公寓一室3000-4700  两室4800-5000  其他小区单间整租可咨询1500-5000左右
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207259909/  title:天之骄子整租复试一房一厅一厨一卫
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/204615165/  title:求租广兰路张江人才公寓天之骄子
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/203777788/  title:求租！广兰路张江人才公寓天之骄子创业公寓一室户，12月底到1月中旬入住。
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/203500505/  title:天之骄子整租一室户
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/200259239/  title:广兰路地铁口 天之骄子人才公寓整租一房一厅65平，双阳台好楼层采光通风好，租金4300可以整租两年！另有其他张江人才公寓一房
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/200001666/  title:无中介费 广兰路地铁口 天之骄子朝南一室户60+平 短租3个月
+2021-07-14 11:59:41,881 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/198973656/  title:广兰路地铁口 天之骄子旁日月光水岸花园 朝南独厨、卫带阳台 电梯房8楼 2800元包水网
+2021-07-14 11:59:59,886 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:天之骄子 with 地点 天之骄子
+2021-07-14 11:59:59,889 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:00:00,199 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=634832&cat=1013 HTTP/1.1" 301 162
+2021-07-14 12:00:00,202 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:00:04,048 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=634832&cat=1013 HTTP/1.1" 200 None
+2021-07-14 12:00:04,069 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234937162/  title:求租天之骄子小户型，无需租赁备案，无需暂住证明，事少不磨叽，中介勿扰
+2021-07-14 12:00:04,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234803948/  title:天之骄子一室户 45平带全套家电 限女生 中介勿扰
+2021-07-14 12:00:04,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234755989/  title:求租天之骄子一室户八月7号前可入住
+2021-07-14 12:00:04,073 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234722272/  title:天之骄子一室一厅一卫户型
+2021-07-14 12:00:04,073 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234673205/  title:已租
+2021-07-14 12:00:04,073 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234655208/  title:天之骄子45平一室户中介勿扰 限女生
+2021-07-14 12:00:04,073 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234446214/  title:天之骄子人才公寓45平一室户 带家电 中介勿扰
+2021-07-14 12:00:04,073 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234347784/  title:求租 21年10月15号入住
+2021-07-14 12:00:04,073 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234195654/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 5200元 电梯房5楼 可租两年
+2021-07-14 12:00:04,073 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234058482/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租最小户型 电梯房中间层 3300元 可租到2022.4.20结束
+2021-07-14 12:00:04,074 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234048027/  title:天之骄子复式转租5200可住2年非中介
+2021-07-14 12:00:04,074 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233903409/  title:天之骄子一房一厅出租
+2021-07-14 12:00:04,074 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233394339/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫其中北次独卫带阳台 2000元 电梯房5楼 一年一签 另一户住一男生
+2021-07-14 12:00:04,074 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233228371/  title:求租 求租 天之骄子一室户
+2021-07-14 12:00:04,074 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233192224/  title:求租天之骄子，有燃气可做饭最好
+2021-07-14 12:00:04,074 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233161717/  title:求租 天之骄子公寓一室户
+2021-07-14 12:00:04,075 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233027248/  title:天之骄子二手闲置  欢迎自提
+2021-07-14 12:00:04,075 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232785844/  title:求租天之骄子一室户，7月初入住，长租
+2021-07-14 12:00:04,075 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232728283/  title:天之骄子搬家旧物处理，欢迎豆油
+2021-07-14 12:00:04,075 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232423135/  title:求天之骄子长租房
+2021-07-14 12:00:04,075 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914827/  title:出租|广兰路天之骄子
+2021-07-14 12:00:04,075 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768274/  title:出租|广兰路天之骄子
+2021-07-14 12:00:04,075 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665391/  title:出租|广兰路天之骄子
+2021-07-14 12:00:04,076 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231589264/  title:7月中旬求租 天之骄子
+2021-07-14 12:00:04,076 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231319449/  title:【已出】天之骄子人才公寓搬家转卖冰箱洗衣机
+2021-07-14 12:00:04,076 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231253792/  title:天之骄子人才公寓68平原始一房一厅
+2021-07-14 12:00:04,077 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231179496/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨一卫 4200元 南北通透 双阳台 短租到2021.8.7或2021.11.7二选一
+2021-07-14 12:00:04,077 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230824326/  title:求天之骄子整租，除了最小户型都可以
+2021-07-14 12:00:04,077 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230799430/  title:求租天之骄子一室一厅
+2021-07-14 12:00:04,077 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230190702/  title:个人转，天之骄子复式2室2厅1卫 7月起到9月，可周租，月租，月租金4900
+2021-07-14 12:00:04,077 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229701877/  title:求租天之骄子
+2021-07-14 12:00:04,077 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229666077/  title:张江人才公寓转租
+2021-07-14 12:00:04,077 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229203721/  title:求租天之骄子一室户
+2021-07-14 12:00:04,078 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228527144/  title:求租，天之骄子一室一厅有厨房更好
+2021-07-14 12:00:04,078 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061578/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:00:04,078 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226771831/  title:（本周六可看）广兰路地铁站步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 电梯房高层 5500元 一年一签
+2021-07-14 12:00:04,079 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226559519/  title:广兰路天之骄子，求短租，一个月，5/19日起租
+2021-07-14 12:00:04,079 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226426369/  title:《限女生》广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房17楼 可租一年两个月 4200元
+2021-07-14 12:00:04,079 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226323763/  title:求租天之骄子小户型
+2021-07-14 12:00:04,080 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226271990/  title:求租人才公寓
+2021-07-14 12:00:04,080 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145827/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:00:04,080 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225964126/  title:诚意求租，天之骄子小户型，男生单人入住，租一年+，8月入住，中介勿扰，无需租赁备案，无需暂住证明
+2021-07-14 12:00:04,080 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225902092/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 朝北 电梯房17楼 可租两年 4280元
+2021-07-14 12:00:04,080 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225696404/  title:天之骄子，独立卫生间、朝南主卧独立阳台，短租两个月，1800，有意者私聊，可看房
+2021-07-14 12:00:04,081 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225382217/  title:天之骄子45平一室户3300元 可住2年 下周可住
+2021-07-14 12:00:04,081 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225115028/  title:急租天之骄子！
+2021-07-14 12:00:04,081 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224971656/  title:天之骄子复式朝南单间出租，
+2021-07-14 12:00:04,081 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224118528/  title:求租天之骄子一室户
+2021-07-14 12:00:04,081 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223889078/  title:求租｜天之骄子
+2021-07-14 12:00:15,086 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:【广兰路附近租房】 with 地点 广兰路
+2021-07-14 12:00:15,091 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:00:15,403 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=496399&cat=1013 HTTP/1.1" 301 162
+2021-07-14 12:00:15,408 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:00:16,471 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=496399&cat=1013 HTTP/1.1" 200 None
+2021-07-14 12:00:16,486 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234908013/  title:2号线广兰路 阳光花城 朝南主卧独卫（内）带阳台 精装修看房有钥匙+vx15221919102无中介费
+2021-07-14 12:00:16,487 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234905833/  title:2号线广兰路站 地铁房 兰沁苑 精装修一房一厅一卫家具家电齐全4500
+2021-07-14 12:00:16,487 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234859497/  title:2号线广兰路地铁口 整租一室户 精装修全新家具 天然气大厨房  价格便宜 民用水电 17821917551微信联系
+2021-07-14 12:00:16,487 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234848490/  title:整租！广兰路地铁站，香楠小区，原始两房！看房vx:13162818819
+2021-07-14 12:00:16,487 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234790144/  title:2号线广兰路地铁站，精装修，大主卧独卫，房子要抢，非常好的房子，电梯高层，卫生间在里面，可以做饭3000，看房随时，19542709603
+2021-07-14 12:00:16,487 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234750223/  title:一2号线广兰路 原始一房
+2021-07-14 12:00:16,487 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234735214/  title:广兰路地铁口  阳光花城  两室一厅的朝南次卧找室友
+2021-07-14 12:00:16,487 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234733479/  title:2号线广兰路地铁站附近，玉兰香苑，主卧朝南，独立卫生间，燃气做饭，2800，联系电话：15172511796（微信同步）
+2021-07-14 12:00:16,488 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234713776/  title:广兰路地铁口阳光花城1居室
+2021-07-14 12:00:16,488 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234712260/  title:广兰路地铁站！张江！玉兰香苑3400！近喜马拉雅，张润等公司
+2021-07-14 12:00:16,488 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234710397/  title:广兰路兰沁苑出租大飘窗北次卧、南主卧，民用水电燃气洗澡做饭 房屋照片实拍
+2021-07-14 12:00:16,488 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234707415/  title:合租！广兰路地铁站！香楠小区，单间独卫3100！看中私聊我
+2021-07-14 12:00:16,488 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234671370/  title:2号线广兰路地铁口，阳光花城，朝南带阳台独立卫生间，随时好看13524281132
+2021-07-14 12:00:16,488 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234666564/  title:寻室友租房
+2021-07-14 12:00:16,488 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234659979/  title:二号线广兰路站 精装修两室一厅一厨一卫 电梯高层 采光好 双南两房 有意者可来电咨询15692100162
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234655395/  title:房东直租！张江.广兰路地铁站附近.香楠小区4700！原始一房，房东配合办居住证！看中私聊我
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234633467/  title:张江广兰路租房  玉兰香苑  朝南主卧一室户  独厨独卫厨房  性价比高 直租  压一付一个
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234602640/  title:房东直租！张江！二号线广兰路地铁站附近，香楠小区，精装整租两房6200！周边菜市场，超市，有轨电车，医院等齐全！
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234593452/  title:2号线广兰路附近香楠小区3179  三楼朝南 带阳台 月底出房 预定找我不需中介费 预约看房！微信18861261316
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234579115/  title:广兰路找短租4个月的房子
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234566191/  title:2号线广兰路香楠小区2850 合租不带独卫 六楼安静好房 精装修 拎包入住 真实房源 找我不需中介费！微信18861261316
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234506438/  title:广兰路地铁口，春港丽园4楼原始一房一厅，原房东独门独户5000，月底可以入住，需要的联系13512179487
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234471275/  title:2号线广兰路和13号线张江路玉兰香苑朝南带飘窗主卧独卫2800元有燃气厨房，V：wsl3712234。可押一付一
+2021-07-14 12:00:16,489 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234441560/  title:【合租】2号线/广兰路/春港丽园3室1厅-随时看房随时入住
+2021-07-14 12:00:16,490 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234411981/  title:2号线，广兰路地铁，玉兰香苑，精装修，大主卧独卫，带阳台，电梯7楼，可以做饭，给钱就租，19542709603
+2021-07-14 12:00:16,490 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234386695/  title:地铁2号线广兰路站附近 玉兰香苑 电梯房 带大阳台 独立卫生间 2870
+2021-07-14 12:00:16,490 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234344367/  title:广兰路  贝越流明新苑  精装朝南主卧单间  民用水电  租金2500每月
+2021-07-14 12:00:16,490 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234335666/  title:近2号线广兰路  朝南主卧单间   阳光花城  租金2500每月
+2021-07-14 12:00:16,490 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234290674/  title:2号线广兰路地铁口，阳光花城，朝南带阳台一室户，真实图片，随时好看13524281132
+2021-07-14 12:00:16,490 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234256301/  title:2号线，广兰路地铁站，精装修主卧独卫，带阳台，可以做饭，地铁口800m，三户合租，4楼，看房方便，19542709603
+2021-07-14 12:00:16,490 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234228985/  title:张江张衡路申江路路口，周边均是张江科创区紧邻广兰路张江路地铁站价格2500电话17702115801vx2838309341
+2021-07-14 12:00:16,493 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234226486/  title:【找室友】合租广兰路两室
+2021-07-14 12:00:16,493 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234209625/  title:广兰路  樟盛苑   朝南主卧独卫
+2021-07-14 12:00:16,493 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234163623/  title:2号线广兰路地铁站口步行8分钟 紧临集电港 展想广场 精装一房一厅 独立燃气厨卫 拎包入住 看房☎️微信18326086603
+2021-07-14 12:00:16,494 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234151741/  title:张江古桐新村紧邻广兰路地铁站周边 长泰广场仅有几分钟路程 l无中介费价格2600 17702115801vx2838309341
+2021-07-14 12:00:16,494 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234146619/  title:广兰路附近 玉兰香苑 一室一厅 3800押一付一 包水网 随时看房V:18953330290
+2021-07-14 12:00:16,494 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234113887/  title:2号线广兰路地铁站附近  春港丽园主卧独卫，  带飘窗   原始房间 带大厅  干净整洁 民用水电煤，性价比高  直租
+2021-07-14 12:00:16,494 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234102496/  title:2号线广兰路地铁站，阳光花城，精装修，主卧朝南，独立卫生间，房间超大，4500，联系电话：15172511796（微信同步）
+2021-07-14 12:00:16,495 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234101600/  title:2号线广兰路地铁站，樟盛苑，精装修，主卧朝南，独立卫生间，电梯房，天然气烧饭，3400，联系电话：15172511796（微信同步）
+2021-07-14 12:00:16,496 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234071635/  title:2号线广兰路和13号线张江路玉兰香苑朝南带飘窗主卧独卫2600元，V：wsl3712234。可押一付一
+2021-07-14 12:00:16,496 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234068915/  title:转租   张江 广兰路   朝南主卧 ，大阳台 带独卫  2800
+2021-07-14 12:00:16,496 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234067734/  title:已租掉｜2号线 广兰路 玉兰香苑四期 朝南带阳台独卫 电梯房
+2021-07-14 12:00:43,519 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:【广兰路附近租房】 with 地点 天之骄子
+2021-07-14 12:00:43,526 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:00:43,835 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=496399&cat=1013 HTTP/1.1" 301 162
+2021-07-14 12:00:43,839 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:00:44,753 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=496399&cat=1013 HTTP/1.1" 200 None
+2021-07-14 12:00:44,761 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234671168/  title:天之骄子
+2021-07-14 12:00:44,762 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233688797/  title:找整租的房子，要三室的，预算7500左右
+2021-07-14 12:00:44,762 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233192726/  title:求租天之骄子，有燃气可做饭最好
+2021-07-14 12:00:44,762 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232083701/  title:出租|广兰路天之骄子
+2021-07-14 12:00:44,762 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914608/  title:出租|广兰路天之骄子
+2021-07-14 12:00:44,762 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231881412/  title:出租|广兰路天之骄子
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231809314/  title:出租|广兰路天之骄子
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768406/  title:出租|广兰路天之骄子
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231718219/  title:求租天之骄子人才公寓两室
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231692513/  title:出租|广兰路天之骄子
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665766/  title:出租|广兰路天之骄子
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229593457/  title:广兰路地铁2号线天之骄子人才公寓整租复式超大一房一厅出租
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229529212/  title:求租天之骄子人才公寓
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228825781/  title:广兰路地铁天之骄子人才公寓整租复式一房一厅出租
+2021-07-14 12:00:44,763 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228131423/  title:天之骄子人才公寓整租一房一厅出租复式燃气厨卫
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227589774/  title:天之骄子公寓两室，有一室找人合租
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227452341/  title:金科路地铁旁浦软人才公寓整租燃气厨卫一房4500每月
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061400/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226348626/  title:近2号线地铁整租一房一厅一厨一卫出租
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145919/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226136197/  title:近2号线地铁广兰路天之骄子人才公寓整租两房出租
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225101583/  title:天之骄子人才公寓、三室三卫三阳台两厅一厨、短租两个月，可单租，有需要者联系：13220340779，中介勿扰，谢谢
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224875831/  title:2号线广兰路附近玉兰香苑多套一室户13402244768
+2021-07-14 12:00:44,764 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224706900/  title:天之骄子主卧2号线广兰路个人转租
+2021-07-14 12:00:44,765 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224578888/  title:求六月以后短租天之骄子人才公寓1-2个月
+2021-07-14 12:00:44,765 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223306434/  title:广兰路地铁天之骄子人才公寓整租超大70平复式一房一厅一厨一卫双阳台带储藏室出租
+2021-07-14 12:00:44,765 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223097378/  title:广兰路地铁天之骄子人才公寓整租一房一厅复式出租
+2021-07-14 12:00:44,765 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/222420665/  title:高科苑 | 一房一厅出租
+2021-07-14 12:00:44,765 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/222109824/  title:广兰路地铁天之骄子人才公寓一室户带阳台出租
+2021-07-14 12:00:44,765 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/221846890/  title:求租天之骄子人才公寓
+2021-07-14 12:00:44,765 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/220926405/  title:天之骄子人才公寓整租一房一厅一厨一卫双阳台双南出租
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219838563/  title:心圆西苑整租三房带阳台精装修出租
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219647047/  title:广兰路地铁口原始户型一房一厅3000每月
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219178874/  title:2号线金科路，广兰路，13号线张江路单间独卫，整套出租13512179487
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218953863/  title:天之骄子人才公寓北次独卫带阳台带储物间2200元 复式两房其中一户 另一户女 限女生
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218551765/  title:天之骄子人才公寓复式一房一厅出租
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218404107/  title:天之骄子人才公寓两房次卧独卫独立阳台独立衣帽间出租2200每月
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218201325/  title:天之骄子人才公寓整租一室户2800
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215366416/  title:天之骄子找一个可以一起合租2居室的
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213992397/  title:二号线广兰路地铁 天之骄子45平一室户 3300
+2021-07-14 12:00:44,766 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213710285/  title:已租
+2021-07-14 12:00:44,767 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206703321/  title:2号线广兰路天之骄子一室户个人转租
+2021-07-14 12:00:44,767 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206517286/  title:天之骄子一室户，30平，3K
+2021-07-14 12:00:44,767 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206151446/  title:天之骄子人才公寓58平超大一室户整租 3600元
+2021-07-14 12:00:44,767 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/204979529/  title:求租 天子骄子一室一厅一卫，过年前后入住即可。
+2021-07-14 12:01:12,781 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:天之骄子 with 地点 广兰路
+2021-07-14 12:01:12,785 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:01:13,096 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=634832&cat=1013 HTTP/1.1" 301 162
+2021-07-14 12:01:13,099 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:01:14,250 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=634832&cat=1013 HTTP/1.1" 200 None
+2021-07-14 12:01:14,262 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234195654/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 5200元 电梯房5楼 可租两年
+2021-07-14 12:01:14,263 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234058482/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租最小户型 电梯房中间层 3300元 可租到2022.4.20结束
+2021-07-14 12:01:14,263 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233903409/  title:天之骄子一房一厅出租
+2021-07-14 12:01:14,263 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233394339/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫其中北次独卫带阳台 2000元 电梯房5楼 一年一签 另一户住一男生
+2021-07-14 12:01:14,263 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914827/  title:出租|广兰路天之骄子
+2021-07-14 12:01:14,263 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231908323/  title:广兰路地铁站香楠小区主卧+次卧
+2021-07-14 12:01:14,263 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768274/  title:出租|广兰路天之骄子
+2021-07-14 12:01:14,263 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665391/  title:出租|广兰路天之骄子
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231253792/  title:天之骄子人才公寓68平原始一房一厅
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231179496/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨一卫 4200元 南北通透 双阳台 短租到2021.8.7或2021.11.7二选一
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229701877/  title:求租天之骄子
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229686006/  title:求租，一房合租/一室户整租，女
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227283657/  title:求广兰路天之娇子小户型短租6个月，6月入住
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061578/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226771831/  title:（本周六可看）广兰路地铁站步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 电梯房高层 5500元 一年一签
+2021-07-14 12:01:14,264 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226559519/  title:广兰路天之骄子，求短租，一个月，5/19日起租
+2021-07-14 12:01:14,265 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226426369/  title:《限女生》广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房17楼 可租一年两个月 4200元
+2021-07-14 12:01:14,265 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145827/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:01:14,265 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225902092/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 朝北 电梯房17楼 可租两年 4280元
+2021-07-14 12:01:14,265 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223279555/  title:2号线广兰路附近   玉兰香苑
+整租二室一厅5500多套
+2021-07-14 12:01:14,265 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/220063085/  title:天之骄子人才公寓 整租47平米一室户 3000元 朝西 6楼 可租三个月
+2021-07-14 12:01:14,265 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218943426/  title:天之骄子原始一房一厅整租4300元
+2021-07-14 12:01:14,265 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218614312/  title:2号线广兰路地铁口 天之骄子复式一房4800元 电梯高层 可住19个月 4月底可入住 代办居住证落户加微hyllry131415
+2021-07-14 12:01:14,266 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218191425/  title:广兰路地铁口 天之骄子人才公寓 整租最小户型 电梯房7楼 可租5个半月2800元
+2021-07-14 12:01:14,266 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/216929562/  title:2号线广兰路地铁口  天之骄子人才公寓复式两房88平 5k 可住两年 中间楼层 最好两女生
+2021-07-14 12:01:14,266 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/216808338/  title:天之骄子人才公寓 47平米一室户转租半年
+2021-07-14 12:01:14,266 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215921192/  title:（限女生）广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫 其中北卧，有阳台，独立卫生间和储藏室 2200元 可租两年
+2021-07-14 12:01:14,266 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215709876/  title:广兰路地铁口 天之骄子人才公寓 整租47平米 3300元 10楼电梯房 可租到 2022.3.13号
+2021-07-14 12:01:14,267 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/214411853/  title:广兰路地铁口500米 展讯中心 电梯房中间层 整租一房 4800元 包物业费
+2021-07-14 12:01:14,268 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/214411544/  title:广兰路地铁口 天之骄子人才公寓 整租一室户3200元 中间层电梯房 可租两年
+2021-07-14 12:01:14,268 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213764724/  title:广兰路地铁口 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房16楼 3800元 可租到12.18号
+2021-07-14 12:01:14,268 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213379303/  title:广兰路地铁口 天之骄子人才公寓 整租复试一房一厅一厨一卫 4300元 电梯房9楼 可租23个月
+2021-07-14 12:01:14,268 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213333151/  title:广兰路地铁口 天之骄子人才公寓 复试两房两卫其中北次独卫带阳台 1600元 另一户住一男生 可租一年
+2021-07-14 12:01:14,268 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/212570774/  title:广兰路地铁口 天之骄子人才公寓 整租最小户型 3000元 电梯房中间层 可租11个月 电话15800517320
+2021-07-14 12:01:14,268 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/212009829/  title:2号线广兰路地铁口  天之骄子人才公寓一室3300-4500  两室5000可咨询
+2021-07-14 12:01:14,268 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/211619294/  title:天之骄子人才公寓一室户出租
+2021-07-14 12:01:14,269 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/210459338/  title:2号线 广兰路地铁口 天之骄子人才公寓整租
+60平超大一室出租
+带阳台，租金3300不谈价
+懂得来，错过无！
+2021-07-14 12:01:14,269 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/209266832/  title:个人转租公寓、一室户、广兰路地铁口
+2021-07-14 12:01:14,269 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208762512/  title:2号线广兰路地铁口  天之骄子人才公寓一室户整租3200-4500   两室4600-5000  了解人才公寓的来
+2021-07-14 12:01:14,269 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208359566/  title:已租出
+2021-07-14 12:01:14,269 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208164539/  title:个人公寓转租：广兰路地铁口附近
+2021-07-14 12:01:14,270 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207833195/  title:玉兰香苑三期转租，超大主卧独卫，可两人入住，2400可刀
+2021-07-14 12:01:14,270 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207829555/  title:2号线广兰路地铁口  天之骄子人才公寓一室3000-4700  两室4800-5000  其他小区单间整租可咨询1500-5000左右
+2021-07-14 12:01:14,270 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207259909/  title:天之骄子整租复试一房一厅一厨一卫
+2021-07-14 12:01:14,270 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/204615165/  title:求租广兰路张江人才公寓天之骄子
+2021-07-14 12:01:14,270 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/203777788/  title:求租！广兰路张江人才公寓天之骄子创业公寓一室户，12月底到1月中旬入住。
+2021-07-14 12:01:14,271 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/203500505/  title:天之骄子整租一室户
+2021-07-14 12:01:14,271 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/200259239/  title:广兰路地铁口 天之骄子人才公寓整租一房一厅65平，双阳台好楼层采光通风好，租金4300可以整租两年！另有其他张江人才公寓一房
+2021-07-14 12:01:14,271 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/200001666/  title:无中介费 广兰路地铁口 天之骄子朝南一室户60+平 短租3个月
+2021-07-14 12:01:14,271 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/198973656/  title:广兰路地铁口 天之骄子旁日月光水岸花园 朝南独厨、卫带阳台 电梯房8楼 2800元包水网
+2021-07-14 12:01:31,282 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:天之骄子 with 地点 天之骄子
+2021-07-14 12:01:31,285 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:01:31,656 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=634832&cat=1013 HTTP/1.1" 301 162
+2021-07-14 12:01:31,660 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:01:32,466 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=634832&cat=1013 HTTP/1.1" 200 None
+2021-07-14 12:01:32,477 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234937162/  title:求租天之骄子小户型，无需租赁备案，无需暂住证明，事少不磨叽，中介勿扰
+2021-07-14 12:01:32,478 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234803948/  title:天之骄子一室户 45平带全套家电 限女生 中介勿扰
+2021-07-14 12:01:32,478 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234755989/  title:求租天之骄子一室户八月7号前可入住
+2021-07-14 12:01:32,478 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234722272/  title:天之骄子一室一厅一卫户型
+2021-07-14 12:01:32,478 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234673205/  title:已租
+2021-07-14 12:01:32,478 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234655208/  title:天之骄子45平一室户中介勿扰 限女生
+2021-07-14 12:01:32,479 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234446214/  title:天之骄子人才公寓45平一室户 带家电 中介勿扰
+2021-07-14 12:01:32,479 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234347784/  title:求租 21年10月15号入住
+2021-07-14 12:01:32,479 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234195654/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 5200元 电梯房5楼 可租两年
+2021-07-14 12:01:32,479 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234058482/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租最小户型 电梯房中间层 3300元 可租到2022.4.20结束
+2021-07-14 12:01:32,479 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234048027/  title:天之骄子复式转租5200可住2年非中介
+2021-07-14 12:01:32,479 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233903409/  title:天之骄子一房一厅出租
+2021-07-14 12:01:32,480 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233394339/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫其中北次独卫带阳台 2000元 电梯房5楼 一年一签 另一户住一男生
+2021-07-14 12:01:32,480 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233228371/  title:求租 求租 天之骄子一室户
+2021-07-14 12:01:32,480 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233192224/  title:求租天之骄子，有燃气可做饭最好
+2021-07-14 12:01:32,480 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233161717/  title:求租 天之骄子公寓一室户
+2021-07-14 12:01:32,480 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233027248/  title:天之骄子二手闲置  欢迎自提
+2021-07-14 12:01:32,480 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232785844/  title:求租天之骄子一室户，7月初入住，长租
+2021-07-14 12:01:32,481 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232728283/  title:天之骄子搬家旧物处理，欢迎豆油
+2021-07-14 12:01:32,481 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232423135/  title:求天之骄子长租房
+2021-07-14 12:01:32,481 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914827/  title:出租|广兰路天之骄子
+2021-07-14 12:01:32,481 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768274/  title:出租|广兰路天之骄子
+2021-07-14 12:01:32,481 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665391/  title:出租|广兰路天之骄子
+2021-07-14 12:01:32,481 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231589264/  title:7月中旬求租 天之骄子
+2021-07-14 12:01:32,482 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231319449/  title:【已出】天之骄子人才公寓搬家转卖冰箱洗衣机
+2021-07-14 12:01:32,482 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231253792/  title:天之骄子人才公寓68平原始一房一厅
+2021-07-14 12:01:32,482 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231179496/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨一卫 4200元 南北通透 双阳台 短租到2021.8.7或2021.11.7二选一
+2021-07-14 12:01:32,482 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230824326/  title:求天之骄子整租，除了最小户型都可以
+2021-07-14 12:01:32,482 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230799430/  title:求租天之骄子一室一厅
+2021-07-14 12:01:32,483 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230190702/  title:个人转，天之骄子复式2室2厅1卫 7月起到9月，可周租，月租，月租金4900
+2021-07-14 12:01:32,483 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229701877/  title:求租天之骄子
+2021-07-14 12:01:32,483 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229666077/  title:张江人才公寓转租
+2021-07-14 12:01:32,483 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229203721/  title:求租天之骄子一室户
+2021-07-14 12:01:32,483 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228527144/  title:求租，天之骄子一室一厅有厨房更好
+2021-07-14 12:01:32,483 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061578/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:01:32,484 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226771831/  title:（本周六可看）广兰路地铁站步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 电梯房高层 5500元 一年一签
+2021-07-14 12:01:32,484 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226559519/  title:广兰路天之骄子，求短租，一个月，5/19日起租
+2021-07-14 12:01:32,484 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226426369/  title:《限女生》广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房17楼 可租一年两个月 4200元
+2021-07-14 12:01:32,484 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226323763/  title:求租天之骄子小户型
+2021-07-14 12:01:32,484 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226271990/  title:求租人才公寓
+2021-07-14 12:01:32,484 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145827/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:01:32,485 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225964126/  title:诚意求租，天之骄子小户型，男生单人入住，租一年+，8月入住，中介勿扰，无需租赁备案，无需暂住证明
+2021-07-14 12:01:32,485 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225902092/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 朝北 电梯房17楼 可租两年 4280元
+2021-07-14 12:01:32,485 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225696404/  title:天之骄子，独立卫生间、朝南主卧独立阳台，短租两个月，1800，有意者私聊，可看房
+2021-07-14 12:01:32,485 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225382217/  title:天之骄子45平一室户3300元 可住2年 下周可住
+2021-07-14 12:01:32,485 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225115028/  title:急租天之骄子！
+2021-07-14 12:01:32,485 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224971656/  title:天之骄子复式朝南单间出租，
+2021-07-14 12:01:32,486 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224118528/  title:求租天之骄子一室户
+2021-07-14 12:01:32,486 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223889078/  title:求租｜天之骄子
+2021-07-14 12:01:55,507 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:【广兰路附近租房】 with 地点 广兰路
+2021-07-14 12:01:55,512 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:01:55,887 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=496399&cat=1013 HTTP/1.1" 301 162
+2021-07-14 12:01:55,890 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:01:57,056 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%B9%BF%E5%85%B0%E8%B7%AF&sort=time&group=496399&cat=1013 HTTP/1.1" 200 None
+2021-07-14 12:01:57,064 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234908013/  title:2号线广兰路 阳光花城 朝南主卧独卫（内）带阳台 精装修看房有钥匙+vx15221919102无中介费
+2021-07-14 12:01:57,065 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234905833/  title:2号线广兰路站 地铁房 兰沁苑 精装修一房一厅一卫家具家电齐全4500
+2021-07-14 12:01:57,065 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234859497/  title:2号线广兰路地铁口 整租一室户 精装修全新家具 天然气大厨房  价格便宜 民用水电 17821917551微信联系
+2021-07-14 12:01:57,065 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234848490/  title:整租！广兰路地铁站，香楠小区，原始两房！看房vx:13162818819
+2021-07-14 12:01:57,065 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234790144/  title:2号线广兰路地铁站，精装修，大主卧独卫，房子要抢，非常好的房子，电梯高层，卫生间在里面，可以做饭3000，看房随时，19542709603
+2021-07-14 12:01:57,065 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234750223/  title:一2号线广兰路 原始一房
+2021-07-14 12:01:57,065 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234735214/  title:广兰路地铁口  阳光花城  两室一厅的朝南次卧找室友
+2021-07-14 12:01:57,066 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234733479/  title:2号线广兰路地铁站附近，玉兰香苑，主卧朝南，独立卫生间，燃气做饭，2800，联系电话：15172511796（微信同步）
+2021-07-14 12:01:57,066 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234713776/  title:广兰路地铁口阳光花城1居室
+2021-07-14 12:01:57,066 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234712260/  title:广兰路地铁站！张江！玉兰香苑3400！近喜马拉雅，张润等公司
+2021-07-14 12:01:57,066 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234710397/  title:广兰路兰沁苑出租大飘窗北次卧、南主卧，民用水电燃气洗澡做饭 房屋照片实拍
+2021-07-14 12:01:57,066 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234707415/  title:合租！广兰路地铁站！香楠小区，单间独卫3100！看中私聊我
+2021-07-14 12:01:57,066 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234671370/  title:2号线广兰路地铁口，阳光花城，朝南带阳台独立卫生间，随时好看13524281132
+2021-07-14 12:01:57,067 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234666564/  title:寻室友租房
+2021-07-14 12:01:57,067 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234659979/  title:二号线广兰路站 精装修两室一厅一厨一卫 电梯高层 采光好 双南两房 有意者可来电咨询15692100162
+2021-07-14 12:01:57,067 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234655395/  title:房东直租！张江.广兰路地铁站附近.香楠小区4700！原始一房，房东配合办居住证！看中私聊我
+2021-07-14 12:01:57,067 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234633467/  title:张江广兰路租房  玉兰香苑  朝南主卧一室户  独厨独卫厨房  性价比高 直租  压一付一个
+2021-07-14 12:01:57,068 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234602640/  title:房东直租！张江！二号线广兰路地铁站附近，香楠小区，精装整租两房6200！周边菜市场，超市，有轨电车，医院等齐全！
+2021-07-14 12:01:57,068 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234593452/  title:2号线广兰路附近香楠小区3179  三楼朝南 带阳台 月底出房 预定找我不需中介费 预约看房！微信18861261316
+2021-07-14 12:01:57,068 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234579115/  title:广兰路找短租4个月的房子
+2021-07-14 12:01:57,068 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234566191/  title:2号线广兰路香楠小区2850 合租不带独卫 六楼安静好房 精装修 拎包入住 真实房源 找我不需中介费！微信18861261316
+2021-07-14 12:01:57,068 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234506438/  title:广兰路地铁口，春港丽园4楼原始一房一厅，原房东独门独户5000，月底可以入住，需要的联系13512179487
+2021-07-14 12:01:57,069 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234471275/  title:2号线广兰路和13号线张江路玉兰香苑朝南带飘窗主卧独卫2800元有燃气厨房，V：wsl3712234。可押一付一
+2021-07-14 12:01:57,069 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234441560/  title:【合租】2号线/广兰路/春港丽园3室1厅-随时看房随时入住
+2021-07-14 12:01:57,069 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234411981/  title:2号线，广兰路地铁，玉兰香苑，精装修，大主卧独卫，带阳台，电梯7楼，可以做饭，给钱就租，19542709603
+2021-07-14 12:01:57,069 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234386695/  title:地铁2号线广兰路站附近 玉兰香苑 电梯房 带大阳台 独立卫生间 2870
+2021-07-14 12:01:57,069 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234344367/  title:广兰路  贝越流明新苑  精装朝南主卧单间  民用水电  租金2500每月
+2021-07-14 12:01:57,069 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234335666/  title:近2号线广兰路  朝南主卧单间   阳光花城  租金2500每月
+2021-07-14 12:01:57,070 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234290674/  title:2号线广兰路地铁口，阳光花城，朝南带阳台一室户，真实图片，随时好看13524281132
+2021-07-14 12:01:57,070 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234256301/  title:2号线，广兰路地铁站，精装修主卧独卫，带阳台，可以做饭，地铁口800m，三户合租，4楼，看房方便，19542709603
+2021-07-14 12:01:57,070 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234228985/  title:张江张衡路申江路路口，周边均是张江科创区紧邻广兰路张江路地铁站价格2500电话17702115801vx2838309341
+2021-07-14 12:01:57,071 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234226486/  title:【找室友】合租广兰路两室
+2021-07-14 12:01:57,071 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234209625/  title:广兰路  樟盛苑   朝南主卧独卫
+2021-07-14 12:01:57,071 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234163623/  title:2号线广兰路地铁站口步行8分钟 紧临集电港 展想广场 精装一房一厅 独立燃气厨卫 拎包入住 看房☎️微信18326086603
+2021-07-14 12:01:57,071 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234151741/  title:张江古桐新村紧邻广兰路地铁站周边 长泰广场仅有几分钟路程 l无中介费价格2600 17702115801vx2838309341
+2021-07-14 12:01:57,071 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234146619/  title:广兰路附近 玉兰香苑 一室一厅 3800押一付一 包水网 随时看房V:18953330290
+2021-07-14 12:01:57,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234113887/  title:2号线广兰路地铁站附近  春港丽园主卧独卫，  带飘窗   原始房间 带大厅  干净整洁 民用水电煤，性价比高  直租
+2021-07-14 12:01:57,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234102496/  title:2号线广兰路地铁站，阳光花城，精装修，主卧朝南，独立卫生间，房间超大，4500，联系电话：15172511796（微信同步）
+2021-07-14 12:01:57,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234101600/  title:2号线广兰路地铁站，樟盛苑，精装修，主卧朝南，独立卫生间，电梯房，天然气烧饭，3400，联系电话：15172511796（微信同步）
+2021-07-14 12:01:57,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234071635/  title:2号线广兰路和13号线张江路玉兰香苑朝南带飘窗主卧独卫2600元，V：wsl3712234。可押一付一
+2021-07-14 12:01:57,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234068915/  title:转租   张江 广兰路   朝南主卧 ，大阳台 带独卫  2800
+2021-07-14 12:01:57,072 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234067734/  title:已租掉｜2号线 广兰路 玉兰香苑四期 朝南带阳台独卫 电梯房
+2021-07-14 12:02:20,096 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:【广兰路附近租房】 with 地点 天之骄子
+2021-07-14 12:02:20,100 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:02:20,475 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=496399&cat=1013 HTTP/1.1" 301 162
+2021-07-14 12:02:20,479 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:02:21,333 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&sort=time&group=496399&cat=1013 HTTP/1.1" 200 None
+2021-07-14 12:02:21,341 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234671168/  title:天之骄子
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233688797/  title:找整租的房子，要三室的，预算7500左右
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233192726/  title:求租天之骄子，有燃气可做饭最好
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232083701/  title:出租|广兰路天之骄子
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914608/  title:出租|广兰路天之骄子
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231881412/  title:出租|广兰路天之骄子
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231809314/  title:出租|广兰路天之骄子
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768406/  title:出租|广兰路天之骄子
+2021-07-14 12:02:21,342 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231718219/  title:求租天之骄子人才公寓两室
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231692513/  title:出租|广兰路天之骄子
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665766/  title:出租|广兰路天之骄子
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229593457/  title:广兰路地铁2号线天之骄子人才公寓整租复式超大一房一厅出租
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229529212/  title:求租天之骄子人才公寓
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228825781/  title:广兰路地铁天之骄子人才公寓整租复式一房一厅出租
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228131423/  title:天之骄子人才公寓整租一房一厅出租复式燃气厨卫
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227589774/  title:天之骄子公寓两室，有一室找人合租
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227452341/  title:金科路地铁旁浦软人才公寓整租燃气厨卫一房4500每月
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061400/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:02:21,343 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226348626/  title:近2号线地铁整租一房一厅一厨一卫出租
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145919/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226136197/  title:近2号线地铁广兰路天之骄子人才公寓整租两房出租
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225101583/  title:天之骄子人才公寓、三室三卫三阳台两厅一厨、短租两个月，可单租，有需要者联系：13220340779，中介勿扰，谢谢
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224875831/  title:2号线广兰路附近玉兰香苑多套一室户13402244768
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224706900/  title:天之骄子主卧2号线广兰路个人转租
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224578888/  title:求六月以后短租天之骄子人才公寓1-2个月
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223306434/  title:广兰路地铁天之骄子人才公寓整租超大70平复式一房一厅一厨一卫双阳台带储藏室出租
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223097378/  title:广兰路地铁天之骄子人才公寓整租一房一厅复式出租
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/222420665/  title:高科苑 | 一房一厅出租
+2021-07-14 12:02:21,344 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/222109824/  title:广兰路地铁天之骄子人才公寓一室户带阳台出租
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/221846890/  title:求租天之骄子人才公寓
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/220926405/  title:天之骄子人才公寓整租一房一厅一厨一卫双阳台双南出租
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219838563/  title:心圆西苑整租三房带阳台精装修出租
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219647047/  title:广兰路地铁口原始户型一房一厅3000每月
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219178874/  title:2号线金科路，广兰路，13号线张江路单间独卫，整套出租13512179487
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218953863/  title:天之骄子人才公寓北次独卫带阳台带储物间2200元 复式两房其中一户 另一户女 限女生
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218551765/  title:天之骄子人才公寓复式一房一厅出租
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218404107/  title:天之骄子人才公寓两房次卧独卫独立阳台独立衣帽间出租2200每月
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218201325/  title:天之骄子人才公寓整租一室户2800
+2021-07-14 12:02:21,345 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215366416/  title:天之骄子找一个可以一起合租2居室的
+2021-07-14 12:02:21,346 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213992397/  title:二号线广兰路地铁 天之骄子45平一室户 3300
+2021-07-14 12:02:21,346 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213710285/  title:已租
+2021-07-14 12:02:21,346 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206703321/  title:2号线广兰路天之骄子一室户个人转租
+2021-07-14 12:02:21,346 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206517286/  title:天之骄子一室户，30平，3K
+2021-07-14 12:02:21,346 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206151446/  title:天之骄子人才公寓58平超大一室户整租 3600元
+2021-07-14 12:02:21,346 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/204979529/  title:求租 天子骄子一室一厅一卫，过年前后入住即可。
+2021-07-14 12:06:29,484 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:天之骄子 with 地点 广兰路
+2021-07-14 12:06:29,489 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:06:29,799 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?cat=1013&sort=time&q=%E5%B9%BF%E5%85%B0%E8%B7%AF&group=634832 HTTP/1.1" 301 162
+2021-07-14 12:06:29,802 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:06:30,948 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?cat=1013&sort=time&q=%E5%B9%BF%E5%85%B0%E8%B7%AF&group=634832 HTTP/1.1" 200 None
+2021-07-14 12:06:30,957 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234195654/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 5200元 电梯房5楼 可租两年
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234058482/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租最小户型 电梯房中间层 3300元 可租到2022.4.20结束
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233903409/  title:天之骄子一房一厅出租
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233394339/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫其中北次独卫带阳台 2000元 电梯房5楼 一年一签 另一户住一男生
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914827/  title:出租|广兰路天之骄子
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231908323/  title:广兰路地铁站香楠小区主卧+次卧
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768274/  title:出租|广兰路天之骄子
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665391/  title:出租|广兰路天之骄子
+2021-07-14 12:06:30,958 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231253792/  title:天之骄子人才公寓68平原始一房一厅
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231179496/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨一卫 4200元 南北通透 双阳台 短租到2021.8.7或2021.11.7二选一
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229701877/  title:求租天之骄子
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229686006/  title:求租，一房合租/一室户整租，女
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227283657/  title:求广兰路天之娇子小户型短租6个月，6月入住
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061578/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226771831/  title:（本周六可看）广兰路地铁站步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 电梯房高层 5500元 一年一签
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226559519/  title:广兰路天之骄子，求短租，一个月，5/19日起租
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226426369/  title:《限女生》广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房17楼 可租一年两个月 4200元
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145827/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:06:30,959 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225902092/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 朝北 电梯房17楼 可租两年 4280元
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223279555/  title:2号线广兰路附近   玉兰香苑
+整租二室一厅5500多套
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/220063085/  title:天之骄子人才公寓 整租47平米一室户 3000元 朝西 6楼 可租三个月
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218943426/  title:天之骄子原始一房一厅整租4300元
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218614312/  title:2号线广兰路地铁口 天之骄子复式一房4800元 电梯高层 可住19个月 4月底可入住 代办居住证落户加微hyllry131415
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218191425/  title:广兰路地铁口 天之骄子人才公寓 整租最小户型 电梯房7楼 可租5个半月2800元
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/216929562/  title:2号线广兰路地铁口  天之骄子人才公寓复式两房88平 5k 可住两年 中间楼层 最好两女生
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/216808338/  title:天之骄子人才公寓 47平米一室户转租半年
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215921192/  title:（限女生）广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫 其中北卧，有阳台，独立卫生间和储藏室 2200元 可租两年
+2021-07-14 12:06:30,960 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215709876/  title:广兰路地铁口 天之骄子人才公寓 整租47平米 3300元 10楼电梯房 可租到 2022.3.13号
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/214411853/  title:广兰路地铁口500米 展讯中心 电梯房中间层 整租一房 4800元 包物业费
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/214411544/  title:广兰路地铁口 天之骄子人才公寓 整租一室户3200元 中间层电梯房 可租两年
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213764724/  title:广兰路地铁口 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房16楼 3800元 可租到12.18号
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213379303/  title:广兰路地铁口 天之骄子人才公寓 整租复试一房一厅一厨一卫 4300元 电梯房9楼 可租23个月
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213333151/  title:广兰路地铁口 天之骄子人才公寓 复试两房两卫其中北次独卫带阳台 1600元 另一户住一男生 可租一年
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/212570774/  title:广兰路地铁口 天之骄子人才公寓 整租最小户型 3000元 电梯房中间层 可租11个月 电话15800517320
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/212009829/  title:2号线广兰路地铁口  天之骄子人才公寓一室3300-4500  两室5000可咨询
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/211619294/  title:天之骄子人才公寓一室户出租
+2021-07-14 12:06:30,961 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/210459338/  title:2号线 广兰路地铁口 天之骄子人才公寓整租
+60平超大一室出租
+带阳台，租金3300不谈价
+懂得来，错过无！
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/209266832/  title:个人转租公寓、一室户、广兰路地铁口
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208762512/  title:2号线广兰路地铁口  天之骄子人才公寓一室户整租3200-4500   两室4600-5000  了解人才公寓的来
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208359566/  title:已租出
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/208164539/  title:个人公寓转租：广兰路地铁口附近
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207833195/  title:玉兰香苑三期转租，超大主卧独卫，可两人入住，2400可刀
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207829555/  title:2号线广兰路地铁口  天之骄子人才公寓一室3000-4700  两室4800-5000  其他小区单间整租可咨询1500-5000左右
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/207259909/  title:天之骄子整租复试一房一厅一厨一卫
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/204615165/  title:求租广兰路张江人才公寓天之骄子
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/203777788/  title:求租！广兰路张江人才公寓天之骄子创业公寓一室户，12月底到1月中旬入住。
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/203500505/  title:天之骄子整租一室户
+2021-07-14 12:06:30,962 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/200259239/  title:广兰路地铁口 天之骄子人才公寓整租一房一厅65平，双阳台好楼层采光通风好，租金4300可以整租两年！另有其他张江人才公寓一房
+2021-07-14 12:06:30,963 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/200001666/  title:无中介费 广兰路地铁口 天之骄子朝南一室户60+平 短租3个月
+2021-07-14 12:06:30,963 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/198973656/  title:广兰路地铁口 天之骄子旁日月光水岸花园 朝南独厨、卫带阳台 电梯房8楼 2800元包水网
+2021-07-14 12:06:59,970 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:天之骄子 with 地点 天之骄子
+2021-07-14 12:06:59,976 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:07:00,348 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?cat=1013&sort=time&q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&group=634832 HTTP/1.1" 301 162
+2021-07-14 12:07:00,351 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:07:01,185 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?cat=1013&sort=time&q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&group=634832 HTTP/1.1" 200 None
+2021-07-14 12:07:01,195 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234937162/  title:求租天之骄子小户型，无需租赁备案，无需暂住证明，事少不磨叽，中介勿扰
+2021-07-14 12:07:01,195 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234803948/  title:天之骄子一室户 45平带全套家电 限女生 中介勿扰
+2021-07-14 12:07:01,195 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234755989/  title:求租天之骄子一室户八月7号前可入住
+2021-07-14 12:07:01,195 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234722272/  title:天之骄子一室一厅一卫户型
+2021-07-14 12:07:01,195 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234673205/  title:已租
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234655208/  title:天之骄子45平一室户中介勿扰 限女生
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234446214/  title:天之骄子人才公寓45平一室户 带家电 中介勿扰
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234347784/  title:求租 21年10月15号入住
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234195654/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 5200元 电梯房5楼 可租两年
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234058482/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租最小户型 电梯房中间层 3300元 可租到2022.4.20结束
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234048027/  title:天之骄子复式转租5200可住2年非中介
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233903409/  title:天之骄子一房一厅出租
+2021-07-14 12:07:01,196 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233394339/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨两卫其中北次独卫带阳台 2000元 电梯房5楼 一年一签 另一户住一男生
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233228371/  title:求租 求租 天之骄子一室户
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233192224/  title:求租天之骄子，有燃气可做饭最好
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233161717/  title:求租 天之骄子公寓一室户
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233027248/  title:天之骄子二手闲置  欢迎自提
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232785844/  title:求租天之骄子一室户，7月初入住，长租
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232728283/  title:天之骄子搬家旧物处理，欢迎豆油
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232423135/  title:求天之骄子长租房
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914827/  title:出租|广兰路天之骄子
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768274/  title:出租|广兰路天之骄子
+2021-07-14 12:07:01,197 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665391/  title:出租|广兰路天之骄子
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231589264/  title:7月中旬求租 天之骄子
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231319449/  title:【已出】天之骄子人才公寓搬家转卖冰箱洗衣机
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231253792/  title:天之骄子人才公寓68平原始一房一厅
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231179496/  title:广兰路地铁口 天之骄子人才公寓 复试两房一厅一厨一卫 4200元 南北通透 双阳台 短租到2021.8.7或2021.11.7二选一
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230824326/  title:求天之骄子整租，除了最小户型都可以
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230799430/  title:求租天之骄子一室一厅
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/230190702/  title:个人转，天之骄子复式2室2厅1卫 7月起到9月，可周租，月租，月租金4900
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229701877/  title:求租天之骄子
+2021-07-14 12:07:01,198 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229666077/  title:张江人才公寓转租
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229203721/  title:求租天之骄子一室户
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228527144/  title:求租，天之骄子一室一厅有厨房更好
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061578/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226771831/  title:（本周六可看）广兰路地铁站步行5分钟 天之骄子人才公寓 复试两房一厅一厨两卫 电梯房高层 5500元 一年一签
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226559519/  title:广兰路天之骄子，求短租，一个月，5/19日起租
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226426369/  title:《限女生》广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 电梯房17楼 可租一年两个月 4200元
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226323763/  title:求租天之骄子小户型
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226271990/  title:求租人才公寓
+2021-07-14 12:07:01,199 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145827/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225964126/  title:诚意求租，天之骄子小户型，男生单人入住，租一年+，8月入住，中介勿扰，无需租赁备案，无需暂住证明
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225902092/  title:广兰路地铁口步行5分钟 天之骄子人才公寓 整租一房一厅一卫 55平米 朝北 电梯房17楼 可租两年 4280元
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225696404/  title:天之骄子，独立卫生间、朝南主卧独立阳台，短租两个月，1800，有意者私聊，可看房
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225382217/  title:天之骄子45平一室户3300元 可住2年 下周可住
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225115028/  title:急租天之骄子！
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224971656/  title:天之骄子复式朝南单间出租，
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224118528/  title:求租天之骄子一室户
+2021-07-14 12:07:01,200 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223889078/  title:求租｜天之骄子
+2021-07-14 12:07:21,222 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:【广兰路附近租房】 with 地点 广兰路
+2021-07-14 12:07:21,226 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:07:21,600 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?cat=1013&sort=time&q=%E5%B9%BF%E5%85%B0%E8%B7%AF&group=496399 HTTP/1.1" 301 162
+2021-07-14 12:07:21,605 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:07:28,837 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?cat=1013&sort=time&q=%E5%B9%BF%E5%85%B0%E8%B7%AF&group=496399 HTTP/1.1" 200 None
+2021-07-14 12:07:28,847 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234908013/  title:2号线广兰路 阳光花城 朝南主卧独卫（内）带阳台 精装修看房有钥匙+vx15221919102无中介费
+2021-07-14 12:07:28,847 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234905833/  title:2号线广兰路站 地铁房 兰沁苑 精装修一房一厅一卫家具家电齐全4500
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234859497/  title:2号线广兰路地铁口 整租一室户 精装修全新家具 天然气大厨房  价格便宜 民用水电 17821917551微信联系
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234848490/  title:整租！广兰路地铁站，香楠小区，原始两房！看房vx:13162818819
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234790144/  title:2号线广兰路地铁站，精装修，大主卧独卫，房子要抢，非常好的房子，电梯高层，卫生间在里面，可以做饭3000，看房随时，19542709603
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234750223/  title:一2号线广兰路 原始一房
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234735214/  title:广兰路地铁口  阳光花城  两室一厅的朝南次卧找室友
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234733479/  title:2号线广兰路地铁站附近，玉兰香苑，主卧朝南，独立卫生间，燃气做饭，2800，联系电话：15172511796（微信同步）
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234713776/  title:广兰路地铁口阳光花城1居室
+2021-07-14 12:07:28,848 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234712260/  title:广兰路地铁站！张江！玉兰香苑3400！近喜马拉雅，张润等公司
+2021-07-14 12:07:28,849 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234710397/  title:广兰路兰沁苑出租大飘窗北次卧、南主卧，民用水电燃气洗澡做饭 房屋照片实拍
+2021-07-14 12:07:28,849 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234707415/  title:合租！广兰路地铁站！香楠小区，单间独卫3100！看中私聊我
+2021-07-14 12:07:28,849 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234671370/  title:2号线广兰路地铁口，阳光花城，朝南带阳台独立卫生间，随时好看13524281132
+2021-07-14 12:07:28,849 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234666564/  title:寻室友租房
+2021-07-14 12:07:28,849 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234659979/  title:二号线广兰路站 精装修两室一厅一厨一卫 电梯高层 采光好 双南两房 有意者可来电咨询15692100162
+2021-07-14 12:07:28,849 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234655395/  title:房东直租！张江.广兰路地铁站附近.香楠小区4700！原始一房，房东配合办居住证！看中私聊我
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234633467/  title:张江广兰路租房  玉兰香苑  朝南主卧一室户  独厨独卫厨房  性价比高 直租  压一付一个
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234602640/  title:房东直租！张江！二号线广兰路地铁站附近，香楠小区，精装整租两房6200！周边菜市场，超市，有轨电车，医院等齐全！
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234593452/  title:2号线广兰路附近香楠小区3179  三楼朝南 带阳台 月底出房 预定找我不需中介费 预约看房！微信18861261316
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234579115/  title:广兰路找短租4个月的房子
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234566191/  title:2号线广兰路香楠小区2850 合租不带独卫 六楼安静好房 精装修 拎包入住 真实房源 找我不需中介费！微信18861261316
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234506438/  title:广兰路地铁口，春港丽园4楼原始一房一厅，原房东独门独户5000，月底可以入住，需要的联系13512179487
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234471275/  title:2号线广兰路和13号线张江路玉兰香苑朝南带飘窗主卧独卫2800元有燃气厨房，V：wsl3712234。可押一付一
+2021-07-14 12:07:28,850 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234441560/  title:【合租】2号线/广兰路/春港丽园3室1厅-随时看房随时入住
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234411981/  title:2号线，广兰路地铁，玉兰香苑，精装修，大主卧独卫，带阳台，电梯7楼，可以做饭，给钱就租，19542709603
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234386695/  title:地铁2号线广兰路站附近 玉兰香苑 电梯房 带大阳台 独立卫生间 2870
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234344367/  title:广兰路  贝越流明新苑  精装朝南主卧单间  民用水电  租金2500每月
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234335666/  title:近2号线广兰路  朝南主卧单间   阳光花城  租金2500每月
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234290674/  title:2号线广兰路地铁口，阳光花城，朝南带阳台一室户，真实图片，随时好看13524281132
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234256301/  title:2号线，广兰路地铁站，精装修主卧独卫，带阳台，可以做饭，地铁口800m，三户合租，4楼，看房方便，19542709603
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234228985/  title:张江张衡路申江路路口，周边均是张江科创区紧邻广兰路张江路地铁站价格2500电话17702115801vx2838309341
+2021-07-14 12:07:28,851 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234226486/  title:【找室友】合租广兰路两室
+2021-07-14 12:07:28,852 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234209625/  title:广兰路  樟盛苑   朝南主卧独卫
+2021-07-14 12:07:28,852 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234163623/  title:2号线广兰路地铁站口步行8分钟 紧临集电港 展想广场 精装一房一厅 独立燃气厨卫 拎包入住 看房☎️微信18326086603
+2021-07-14 12:07:28,852 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234151741/  title:张江古桐新村紧邻广兰路地铁站周边 长泰广场仅有几分钟路程 l无中介费价格2600 17702115801vx2838309341
+2021-07-14 12:07:28,852 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234146619/  title:广兰路附近 玉兰香苑 一室一厅 3800押一付一 包水网 随时看房V:18953330290
+2021-07-14 12:07:28,852 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234113887/  title:2号线广兰路地铁站附近  春港丽园主卧独卫，  带飘窗   原始房间 带大厅  干净整洁 民用水电煤，性价比高  直租
+2021-07-14 12:07:28,852 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234102496/  title:2号线广兰路地铁站，阳光花城，精装修，主卧朝南，独立卫生间，房间超大，4500，联系电话：15172511796（微信同步）
+2021-07-14 12:07:28,852 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234101600/  title:2号线广兰路地铁站，樟盛苑，精装修，主卧朝南，独立卫生间，电梯房，天然气烧饭，3400，联系电话：15172511796（微信同步）
+2021-07-14 12:07:28,853 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234071635/  title:2号线广兰路和13号线张江路玉兰香苑朝南带飘窗主卧独卫2600元，V：wsl3712234。可押一付一
+2021-07-14 12:07:28,853 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234068915/  title:转租   张江 广兰路   朝南主卧 ，大阳台 带独卫  2800
+2021-07-14 12:07:28,853 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234067734/  title:已租掉｜2号线 广兰路 玉兰香苑四期 朝南带阳台独卫 电梯房
+2021-07-14 12:07:56,878 - __main__ - get_all_group_rooms - INFO - 获取豆瓣小组:【广兰路附近租房】 with 地点 天之骄子
+2021-07-14 12:07:56,882 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTP connection (1): www.douban.com
+2021-07-14 12:07:57,193 - urllib3.connectionpool - _make_request - DEBUG - http://www.douban.com:80 "GET /group/search?cat=1013&sort=time&q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&group=496399 HTTP/1.1" 301 162
+2021-07-14 12:07:57,195 - urllib3.connectionpool - _new_conn - DEBUG - Starting new HTTPS connection (1): www.douban.com
+2021-07-14 12:07:58,093 - urllib3.connectionpool - _make_request - DEBUG - https://www.douban.com:443 "GET /group/search?cat=1013&sort=time&q=%E5%A4%A9%E4%B9%8B%E9%AA%84%E5%AD%90&group=496399 HTTP/1.1" 200 None
+2021-07-14 12:07:58,101 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/234671168/  title:天之骄子
+2021-07-14 12:07:58,101 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233688797/  title:找整租的房子，要三室的，预算7500左右
+2021-07-14 12:07:58,101 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/233192726/  title:求租天之骄子，有燃气可做饭最好
+2021-07-14 12:07:58,101 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/232083701/  title:出租|广兰路天之骄子
+2021-07-14 12:07:58,101 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231914608/  title:出租|广兰路天之骄子
+2021-07-14 12:07:58,101 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231881412/  title:出租|广兰路天之骄子
+2021-07-14 12:07:58,102 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231809314/  title:出租|广兰路天之骄子
+2021-07-14 12:07:58,102 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231768406/  title:出租|广兰路天之骄子
+2021-07-14 12:07:58,102 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231718219/  title:求租天之骄子人才公寓两室
+2021-07-14 12:07:58,102 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231692513/  title:出租|广兰路天之骄子
+2021-07-14 12:07:58,102 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/231665766/  title:出租|广兰路天之骄子
+2021-07-14 12:07:58,102 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229593457/  title:广兰路地铁2号线天之骄子人才公寓整租复式超大一房一厅出租
+2021-07-14 12:07:58,102 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/229529212/  title:求租天之骄子人才公寓
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228825781/  title:广兰路地铁天之骄子人才公寓整租复式一房一厅出租
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/228131423/  title:天之骄子人才公寓整租一房一厅出租复式燃气厨卫
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227589774/  title:天之骄子公寓两室，有一室找人合租
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227452341/  title:金科路地铁旁浦软人才公寓整租燃气厨卫一房4500每月
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/227061400/  title:金科路地铁浦软人才公寓一房 | 高科苑两房 | 天之骄子人才公寓两房出租
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226348626/  title:近2号线地铁整租一房一厅一厨一卫出租
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226145919/  title:天之骄子人才公寓朝南主卧独卫带阳台出租
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/226136197/  title:近2号线地铁广兰路天之骄子人才公寓整租两房出租
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/225101583/  title:天之骄子人才公寓、三室三卫三阳台两厅一厨、短租两个月，可单租，有需要者联系：13220340779，中介勿扰，谢谢
+2021-07-14 12:07:58,103 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224875831/  title:2号线广兰路附近玉兰香苑多套一室户13402244768
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224706900/  title:天之骄子主卧2号线广兰路个人转租
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/224578888/  title:求六月以后短租天之骄子人才公寓1-2个月
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223306434/  title:广兰路地铁天之骄子人才公寓整租超大70平复式一房一厅一厨一卫双阳台带储藏室出租
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/223097378/  title:广兰路地铁天之骄子人才公寓整租一房一厅复式出租
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/222420665/  title:高科苑 | 一房一厅出租
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/222109824/  title:广兰路地铁天之骄子人才公寓一室户带阳台出租
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/221846890/  title:求租天之骄子人才公寓
+2021-07-14 12:07:58,104 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/220926405/  title:天之骄子人才公寓整租一房一厅一厨一卫双阳台双南出租
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219838563/  title:心圆西苑整租三房带阳台精装修出租
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219647047/  title:广兰路地铁口原始户型一房一厅3000每月
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/219178874/  title:2号线金科路，广兰路，13号线张江路单间独卫，整套出租13512179487
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218953863/  title:天之骄子人才公寓北次独卫带阳台带储物间2200元 复式两房其中一户 另一户女 限女生
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218551765/  title:天之骄子人才公寓复式一房一厅出租
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218404107/  title:天之骄子人才公寓两房次卧独卫独立阳台独立衣帽间出租2200每月
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/218201325/  title:天之骄子人才公寓整租一室户2800
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/215366416/  title:天之骄子找一个可以一起合租2居室的
+2021-07-14 12:07:58,105 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213992397/  title:二号线广兰路地铁 天之骄子45平一室户 3300
+2021-07-14 12:07:58,106 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/213710285/  title:已租
+2021-07-14 12:07:58,106 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206703321/  title:2号线广兰路天之骄子一室户个人转租
+2021-07-14 12:07:58,106 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206517286/  title:天之骄子一室户，30平，3K
+2021-07-14 12:07:58,106 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/206151446/  title:天之骄子人才公寓58平超大一室户整租 3600元
+2021-07-14 12:07:58,106 - __main__ - get_all_group_rooms - INFO - =>url:https://www.douban.com/group/topic/204979529/  title:求租 天子骄子一室一厅一卫，过年前后入住即可。

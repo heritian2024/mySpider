@@ -58,7 +58,7 @@ class DoubanSpider(object):
             yield node.get('href'), node.get('title')
 
     def get_room_desc_div(self, url):
-        response = requests.get(url=url)
+        response = requests.get(url=url,headers=self.default_headers)
         if response.status_code != 200:
             logger.error('获取房子接口失败, url: {} rsp: {}'.format(url, response))
 
@@ -152,7 +152,7 @@ def monitor_rooms():
             logger.info('##发送邮件##  链接：{}，标题：{}'.format(url, title))
             send_room_mail(url, title)
             time.sleep(5)
-        time.sleep(10 * random.randint(10, 30))
+        time.sleep(60 * random.randint(10, 30))
 
 
 if __name__ == '__main__':
