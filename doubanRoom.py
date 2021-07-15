@@ -50,25 +50,25 @@ class DoubanSpider(object):
             logger.error(
                 '查询房子接口失败 url: {} rsp: {}'.format(self.search_url, response)
             )
-
-        root = etree.HTML(response.text)
-        xpath = '//table[@class="olt"]//a[@title]'
-        link_nodes = root.xpath(xpath)
-        for node in link_nodes:
-            yield node.get('href'), node.get('title')
+        else:
+            root = etree.HTML(response.text)
+            xpath = '//table[@class="olt"]//a[@title]'
+            link_nodes = root.xpath(xpath)
+            for node in link_nodes:
+                yield node.get('href'), node.get('title')
 
     def get_room_desc_div(self, url):
         response = requests.get(url=url,headers=self.default_headers)
         if response.status_code != 200:
             logger.error('获取房子接口失败, url: {} rsp: {}'.format(url, response))
-
-        root = etree.HTML(response.content)
-        xpath = '//div[@class="topic-content clearfix"]'
-        try:
-            div_element = root.xpath(xpath)[0]
-            return etree.tostring(div_element).decode()
-        except:
-            logger.error('获取房子接口失败, url: {} rsp: {} {}'.format(url, response, traceback.format_exc()))
+        else:
+            root = etree.HTML(response.content)
+            xpath = '//div[@class="topic-content clearfix"]'
+            try:
+                div_element = root.xpath(xpath)[0]
+                return etree.tostring(div_element).decode()
+            except:
+                logger.error('获取房子接口失败, url: {} rsp: {} {}'.format(url, response, traceback.format_exc()))
 
 
 class Diff(object):
