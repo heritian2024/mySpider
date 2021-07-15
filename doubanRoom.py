@@ -46,22 +46,20 @@ class DoubanSpider(object):
             url=self.search_url, params=params,
             headers=self.default_headers
         )
-        if response.status_code != 200:
-            logger.error(
-                '查询房子接口失败 url: {} rsp: {}'.format(self.search_url, response)
-            )
-        else:
+        if response.status_code == 200:
             root = etree.HTML(response.text)
             xpath = '//table[@class="olt"]//a[@title]'
             link_nodes = root.xpath(xpath)
             for node in link_nodes:
                 yield node.get('href'), node.get('title')
+        else:
+            logger.error(
+                '查询房子接口失败 url: {} rsp: {}'.format(self.search_url, response)
+            )
 
     def get_room_desc_div(self, url):
         response = requests.get(url=url,headers=self.default_headers)
-        if response.status_code != 200:
-            logger.error('获取房子接口失败, url: {} rsp: {}'.format(url, response))
-        else:
+        if response.status_code == 200:
             root = etree.HTML(response.content)
             xpath = '//div[@class="topic-content clearfix"]'
             try:
@@ -70,6 +68,8 @@ class DoubanSpider(object):
             except:
                 logger.error('获取房子接口失败, url: {} rsp: {} {}'.format(url, response, traceback.format_exc()))
 
+        else:
+            logger.error('获取房子接口失败, url: {} rsp: {}'.format(url, response))
 
 class Diff(object):
 
@@ -113,7 +113,7 @@ def get_all_group_rooms():
                 logger.info('=>url:{}  title:{}'.format(url, title))
                 if not any([x in title for x in exclude_words]):
                     yield url, title
-            time.sleep(random.randint(10, 30))
+            time.sleep(random.randint(10, 60))
 
 
 def get_new_rooms():
