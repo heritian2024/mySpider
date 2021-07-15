@@ -25,6 +25,7 @@ groups = config.groups
 locations = config.locations
 receive_mail_addresses = config.mail['receivers']
 exclude_words = config.exclude_words
+pre_time = config.pre_time
 
 rooms_filepath = '/tmp/douban_rooms.json'
 
@@ -49,9 +50,11 @@ class DoubanSpider(object):
         if response.status_code == 200:
             root = etree.HTML(response.text)
             xpath = '//table[@class="olt"]//a[@title]'
-            link_nodes = root.xpath(xpath)
-            for node in link_nodes:
-                yield node.get('href'), node.get('title')
+            linkNodes = root.xpath(xpath)
+            xpathTime = '//table[@class="olt"]//td[@class="td-time"]'
+            linkNodesTime = root.xpath(xpathTime)
+            for i in range(len(linkNodes)):
+                yield linkNodes[i].get('href'), linkNodes[i].get('title'), linkNodesTime[i].get('title')
         else:
             logger.error(
                 '查询房子接口失败 url: {} rsp: {}'.format(self.search_url, response)
@@ -109,10 +112,13 @@ def get_all_group_rooms():
         for location in locations:
             logger.info('获取豆瓣小组:{} with 地点 {}'.format(group_name, location))
             room_list = DoubanSpider().get_room_url_title_list(group_id, location)
-            for url, title in room_list:
-                logger.info('=>url:{}  title:{}'.format(url, title))
-                if not any([x in title for x in exclude_words]):
-                    yield url, title
+            for url, title, tmpTime in room_list:
+                time_stamp_pre = time.mktime(time.strptime(pre_time, '%Y-%m-%d %H:%M:%S'))
+                time_stamp_target = time.mktime(time.strptime(tmpTime, '%Y-%m-%d %H:%M:%S'))
+                if int(time_stamp_target) > int(time_stamp_pre):
+                    if not any([x in title for x in exclude_words]):
+                        logger.info('=>url:{}  title:{} time:{}'.format(url, title, tmpTime))
+                        yield url, title
             time.sleep(random.randint(10, 60))
 
 
