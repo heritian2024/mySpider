@@ -31,12 +31,25 @@ rooms_filepath = '/tmp/douban_rooms.json'
 
 
 class DoubanSpider(object):
-
-    default_headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) '
-                      'AppleWebKit/537.36 (KHTML, like Gecko) '
-                      'Chrome/61.0.3163.100 Safari/537.36',
-    }
+    random_headers = [
+        {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/20100101 Firefox/4.0.1'
+        },
+        {
+            'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;'
+        },
+        {
+            'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'
+        },
+        {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'
+        }
+    ]
+    # default_headers = {
+    #     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) '
+    #                   'AppleWebKit/537.36 (KHTML, like Gecko) '
+    #                   'Chrome/61.0.3163.100 Safari/537.36',
+    # }
 
     search_url = 'http://www.douban.com/group/search'
     search_required_params = dict(cat=1013, sort='time')
@@ -45,7 +58,7 @@ class DoubanSpider(object):
         params = dict(group=group_id, q=query, **self.search_required_params)
         response = requests.get(
             url=self.search_url, params=params,
-            headers=self.default_headers
+            headers=random.choice(self.random_headers)
         )
         if response.status_code == 200:
             root = etree.HTML(response.text)
@@ -61,7 +74,7 @@ class DoubanSpider(object):
             )
 
     def get_room_desc_div(self, url):
-        response = requests.get(url=url,headers=self.default_headers)
+        response = requests.get(url=url, headers=random.choice(self.random_headers))
         if response.status_code == 200:
             root = etree.HTML(response.content)
             xpath = '//div[@class="topic-content clearfix"]'
