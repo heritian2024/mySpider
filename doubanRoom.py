@@ -8,6 +8,7 @@ import os
 import sys
 import random
 import time
+import datetime
 import traceback
 
 from lxml import etree
@@ -26,9 +27,10 @@ locations = config.locations
 receive_mail_addresses = config.mail['receivers']
 exclude_words = config.exclude_words
 pre_time = config.pre_time
+range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date())+config.range_time_start, '%Y-%m-%d%H:%M')
+range_time_e = datetime.datetime.strptime(str(datetime.datetime.now().date())+config.range_time_end, '%Y-%m-%d%H:%M')
 
 rooms_filepath = '/tmp/douban_rooms.json'
-
 
 class DoubanSpider(object):
     random_headers = [
@@ -167,12 +169,21 @@ def send_room_mail(room_url, room_title):
 
 def monitor_rooms():
     while True:
-        new_rooms = get_new_rooms()
-        for url, title in new_rooms:
-            logger.info('##发送邮件##  链接：{}，标题：{}'.format(url, title))
-            send_room_mail(url, title)
-            time.sleep(5)
-        time.sleep(60 * random.randint(10, 30))
+        # 当前时间
+        n_time = datetime.datetime.now()
+        # 判断当前时间是否在范围时间内
+        if n_time > range_time_s and n_time < range_time_e:
+            new_rooms = get_new_rooms()
+            for url, title in new_rooms:
+                logger.info('##发送邮件##  链接：{}，标题：{}'.format(url, title))
+                send_room_mail(url, title)
+                time.sleep(5)
+            # 休眠60*(45~75)秒
+            time.sleep(60 * random.randint(45, 75))
+        else:
+            #休眠60*60秒
+            time.sleep(60 * 60)
+
 
 
 if __name__ == '__main__':
