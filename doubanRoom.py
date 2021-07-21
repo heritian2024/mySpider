@@ -169,7 +169,9 @@ def monitor_rooms():
     while True:
         # 当前时间
         n_time = datetime.datetime.now()
+        logger.info('*****************************************')
         logger.info('爬虫轮次开始：{}'.format(n_time))
+        logger.info('*****************************************')
         # 判断当前时间是否在范围时间内
         range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date()) + config.range_time_start,
                                                   '%Y-%m-%d%H:%M')
