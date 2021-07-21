@@ -27,8 +27,6 @@ locations = config.locations
 receive_mail_addresses = config.mail['receivers']
 exclude_words = config.exclude_words
 pre_time = config.pre_time
-range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date())+config.range_time_start, '%Y-%m-%d%H:%M')
-range_time_e = datetime.datetime.strptime(str(datetime.datetime.now().date())+config.range_time_end, '%Y-%m-%d%H:%M')
 
 rooms_filepath = '/tmp/douban_rooms.json'
 
@@ -171,7 +169,12 @@ def monitor_rooms():
     while True:
         # 当前时间
         n_time = datetime.datetime.now()
+        logger.info('爬虫轮次开始：{}'.format(n_time))
         # 判断当前时间是否在范围时间内
+        range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date()) + config.range_time_start,
+                                                  '%Y-%m-%d%H:%M')
+        range_time_e = datetime.datetime.strptime(str(datetime.datetime.now().date()) + config.range_time_end,
+                                                  '%Y-%m-%d%H:%M')
         if n_time > range_time_s and n_time < range_time_e:
             new_rooms = get_new_rooms()
             for url, title in new_rooms:
