@@ -28,22 +28,23 @@ receive_mail_addresses = config.mail['receivers']
 exclude_words = config.exclude_words
 pre_time = config.pre_time
 
-rooms_filepath = '/tmp/douban_rooms.json'
+rooms_filepath = './douban_rooms.json'
 
 class DoubanSpider(object):
     random_headers = [
-        {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/20100101 Firefox/4.0.1'
-        },
-        {
-            'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;'
-        },
-        {
-            'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'
-        },
-        {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'
-        }
+        {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'},
+        {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36'},
+        {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0'},
+        {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/537.75.14'},
+        {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)'},
+        {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'},
+        {'User-Agent': 'Opera/9.25 (Windows NT 5.1; U; en)'},
+        {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)'},
+        {'User-Agent': 'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Kubuntu)'},
+        {'User-Agent': 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.12) Gecko/20070731 Ubuntu/dapper-security Firefox/1.5.0.12'},
+        {'User-Agent': 'Lynx/2.8.5rel.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/1.2.9'},
+        {'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.7 (KHTML, like Gecko) Ubuntu/11.04 Chromium/16.0.912.77 Chrome/16.0.912.77 Safari/535.7'},
+        {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0) Gecko/20100101 Firefox/10.0 '},
     ]
     # default_headers = {
     #     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) '
@@ -82,10 +83,9 @@ class DoubanSpider(object):
                 div_element = root.xpath(xpath)[0]
                 return etree.tostring(div_element).decode()
             except:
-                logger.error('获取房子接口失败, url: {} rsp: {} {}'.format(url, response, traceback.format_exc()))
-
+                logger.error('获取房子详细信息失败, url: {} rsp: {} {}'.format(url, response, traceback.format_exc()))
         else:
-            logger.error('获取房子接口失败, url: {} rsp: {}'.format(url, response))
+            logger.error('获取房子详细信息失败, url: {} rsp: {}'.format(url, response))
 
 class Diff(object):
 
@@ -93,7 +93,6 @@ class Diff(object):
         self.filepath = rooms_filepath
         self.old_dicts = self._load_old_items_from_disk()
         self.new_dicts = new_dicts
-
         self._save_items_to_disk({**self.old_dicts, **self.new_dicts})
 
     def get_added_items(self):
@@ -114,7 +113,7 @@ class Diff(object):
         return json.load(open(self.filepath))
 
     def _save_items_to_disk(self, new_dicts):
-        f = open(self.filepath, 'w')
+        f = open(self.filepath, 'w', encoding="utf-8")
         f.write(json.dumps(new_dicts, indent=4, ensure_ascii=False))
         f.flush()
         f.close()
@@ -130,8 +129,8 @@ def get_all_group_rooms():
                 time_stamp_target = time.mktime(time.strptime(tmpTime, '%Y-%m-%d %H:%M:%S'))
                 logger.info('######{}:{}'.format(title, tmpTime))
                 if int(time_stamp_target) > int(time_stamp_pre):
-                    logger.info('=>url:{}  title:{} time:{}'.format(url, title, tmpTime))
                     if not any([x in title for x in exclude_words]):
+                        logger.info('[筛选后] url:{}  title:{} time:{}'.format(url, title, tmpTime))
                         yield url, title
             time.sleep(random.randint(5, 10))
 
@@ -180,9 +179,9 @@ def monitor_rooms():
         if n_time > range_time_s and n_time < range_time_e:
             new_rooms = get_new_rooms()
             for url, title in new_rooms:
-                logger.info('##发送邮件##  链接：{}，标题：{}'.format(url, title))
+                logger.info('[发送邮件] 链接：{}，标题：{}'.format(url, title))
                 send_room_mail(url, title)
-                time.sleep(5)
+                time.sleep(random.randint(2, 10))
             # 休眠60*(45~75)秒
             time.sleep(60 * random.randint(45, 75))
         else:
