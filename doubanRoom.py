@@ -70,7 +70,7 @@ class DoubanSpider(object):
             for i in range(len(linkNodes)):
                 yield linkNodes[i].get('href'), linkNodes[i].get('title'), linkNodesTime[i].get('title')
         else:
-            logger.error(
+            logger.info(
                 '查询房子接口失败 url: {} rsp: {}'.format(self.search_url, response)
             )
 
@@ -83,9 +83,9 @@ class DoubanSpider(object):
                 div_element = root.xpath(xpath)[0]
                 return etree.tostring(div_element).decode()
             except:
-                logger.error('获取房子详细信息失败, url: {} rsp: {} {}'.format(url, response, traceback.format_exc()))
+                logger.info('获取房子详细信息失败, url: {} rsp: {} {}'.format(url, response, traceback.format_exc()))
         else:
-            logger.error('获取房子详细信息失败, url: {} rsp: {}'.format(url, response))
+            logger.info('获取房子详细信息失败, url: {} rsp: {}'.format(url, response))
 
 class Diff(object):
 
