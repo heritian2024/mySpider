@@ -110,7 +110,7 @@ class Diff(object):
     def _load_old_items_from_disk(self):
         if not os.path.isfile(self.filepath):
             return {}
-        return json.load(open(self.filepath))
+        return json.load(open(self.filepath, encoding="utf-8"))
 
     def _save_items_to_disk(self, new_dicts):
         f = open(self.filepath, 'w', encoding="utf-8")
