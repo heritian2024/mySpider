@@ -179,7 +179,7 @@ def monitor_rooms():
         if n_time > range_time_s and n_time < range_time_e:
             new_rooms = get_new_rooms()
             for url, title in new_rooms:
-                logger.info('[发送邮件] 链接：{}，标题：{}'.format(url, title))
+                logger.info('[发送邮件] 链接：{}，标题：{}'.format(url, tit，le))
                 send_room_mail(url, title)
                 time.sleep(random.randint(2, 10))
             # 休眠60*(45~75)秒
