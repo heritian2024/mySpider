@@ -129,8 +129,8 @@ def get_all_group_rooms():
                 time_stamp_target = time.mktime(time.strptime(tmpTime, '%Y-%m-%d %H:%M:%S'))
                 logger.info('######{}:{}'.format(title, tmpTime))
                 if int(time_stamp_target) > int(time_stamp_pre):
-                    if not any([x in title for x in exclude_words]):
-                        logger.info('[筛选后] url:{}  title:{} time:{}'.format(url, title, tmpTime))
+                    if not any([x in title for x in exclude_words]) and any([x in title for x in location]):
+                        logger.info('[筛选后][{}] url:{}  title:{} time:{}'.format(location, url, title, tmpTime))
                         yield url, title
             time.sleep(random.randint(5, 10))
 
