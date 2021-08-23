@@ -122,7 +122,7 @@ class Diff(object):
 def get_all_group_rooms():
     for group_id, group_name in groups:
         for location in locations:
-            logger.info('获取豆瓣小组:{} 地点:{}'.format(group_name, location))
+            logger.info('获取豆瓣小组:{},Group:{},地点:{}'.format(group_name, group_id, location))
             room_list = DoubanSpider().get_room_url_title_list(group_id, location)
             for url, title, tmpTime in room_list:
                 time_stamp_pre = time.mktime(time.strptime(pre_time, '%Y-%m-%d %H:%M:%S'))
