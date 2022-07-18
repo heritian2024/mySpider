@@ -10,11 +10,11 @@ import config
 
 logger = logging.getLogger(__name__)
 
-
 sender = config.mail['sender']
 host = config.mail['host']
 password = config.mail['password']
 receivers = config.mail['receivers']
+subject_prefix = config.mail['subject_prefix']
 
 
 def add_error_log_mail_handler(logger, system):
@@ -46,3 +46,27 @@ def send_mail(subject, to, content, cc=None, type='plain', system='自动'):
     msg = Message(subject=subject, to=to, cc=cc, html=html, body=body,
                   fromaddr=sender)
     mail.send(msg)
+
+
+if __name__ == '__main__':
+    tmpUrl = 'https://www.douban.com/group/topic/234722272/'
+    tmpDiv = '天之骄子一室一厅一卫户型'
+    content = '''
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        </head>
+        <body>
+            <a href="{url}">原文链接</a>
+            {div}
+        </body>
+    </html>
+    '''.format(url=tmpUrl, div=tmpDiv)
+
+    send_mail(
+        to=receivers,
+        subject='标题',
+        content=content,
+        type='html',
+        system=subject_prefix
+    )
