@@ -1,4 +1,6 @@
+import difflib
 import re  # 正则
+import sys
 import urllib.error
 import urllib.request
 import json
@@ -6,9 +8,36 @@ import requests
 import random
 import time
 import datetime
+import logging
+
+logger = logging.getLogger(__name__)
+# 范围时间
+range_time_start = '10:00'
+range_time_end = '12:00'
 
 
 def main():
+    while True:
+        # 当前时间
+        n_time = datetime.datetime.now()
+        logger.info('*****************************************')
+        logger.info('爬虫轮次开始：{}'.format(n_time))
+        logger.info('*****************************************')
+        # 判断当前时间是否在范围时间内
+        range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date()) + range_time_start,
+                                                  '%Y-%m-%d%H:%M')
+        range_time_e = datetime.datetime.strptime(str(datetime.datetime.now().date()) + range_time_end,
+                                                  '%Y-%m-%d%H:%M')
+        if n_time > range_time_s and n_time < range_time_e:
+            doMain()
+            # 休眠60*(45~75)秒
+            time.sleep(60 * random.randint(45, 75))
+        else:
+            # 休眠60*60秒
+            time.sleep(60 * 60)
+
+
+def doMain():
     savepath_today = 'zhenfuliGoods_%s.txt' % getToday()
     savepath_yesterday = 'zhenfuliGoods_%s.txt' % getYesterday()
     print("today    >>" + savepath_today)
@@ -17,7 +46,7 @@ def main():
     ## step.获取所有商品
     # cat_id: 55180
     default_max_page = 5000
-    default_start_page = 22
+    default_start_page = 59
     for page in range(default_max_page):
         tmp_page = default_start_page + page
         print("执行轮次：" + str(tmp_page))
@@ -27,13 +56,31 @@ def main():
         time.sleep(5 + random.randint(5, 10))
 
     ## step.比对商品列表
+    difflib
+    file1 = open(savepath_today, 'u').readlines()
+    file2 = open(savepath_yesterday, 'u').readlines()
+    diff = difflib.ndiff(file1, file2)
+
+    sys.stdout.writelines(diff)
+
 
     ## step.获取上新物品
 
+def getDay(offset):
+    now_time = datetime.datetime.now()
+    yes_time = now_time + datetime.timedelta(days=offset)
+    uuid_str = yes_time.strftime('%Y%m%d')  # 格式化输出
+    return uuid_str
 
 def getYesterday():
     now_time = datetime.datetime.now()
     yes_time = now_time + datetime.timedelta(days=-1)
+    uuid_str = yes_time.strftime('%Y%m%d')  # 格式化输出
+    return uuid_str
+
+def getTomorrow():
+    now_time = datetime.datetime.now()
+    yes_time = now_time + datetime.timedelta(days=1)
     uuid_str = yes_time.strftime('%Y%m%d')  # 格式化输出
     return uuid_str
 
