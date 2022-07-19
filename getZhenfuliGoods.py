@@ -1,6 +1,4 @@
-import difflib
-import re  # 正则
-import sys
+
 import urllib.error
 import urllib.request
 import json
@@ -10,10 +8,13 @@ import time
 import datetime
 import logging
 
+from dayUtils import getToday, getYesterday
+from mail_zhenfuli import mailGoods
+
 logger = logging.getLogger(__name__)
 # 范围时间
-range_time_start = '10:00'
-range_time_end = '12:00'
+range_time_start = '23:00'
+range_time_end = '24:00'
 
 
 def main():
@@ -34,61 +35,39 @@ def main():
             time.sleep(60 * random.randint(45, 75))
         else:
             # 休眠60*60秒
-            time.sleep(60 * 60)
+            time.sleep(2 * 60 * 60)
 
 
 def doMain():
     savepath_today = 'zhenfuliGoods_%s.txt' % getToday()
     savepath_yesterday = 'zhenfuliGoods_%s.txt' % getYesterday()
-    print("today    >>" + savepath_today)
-    print("yesterday >>" + savepath_yesterday)
+    logger.info("today    >>" + savepath_today)
+    logger.info("yesterday >>" + savepath_yesterday)
 
     ## step.获取所有商品
     # cat_id: 55180
-    default_max_page = 5000
-    default_start_page = 59
+    default_max_page = 100
+    default_start_page = 0
     for page in range(default_max_page):
         tmp_page = default_start_page + page
-        print("执行轮次：" + str(tmp_page))
+        logger.info("执行轮次：" + str(tmp_page))
         count = saveGoods(tmp_page, savepath_today)
         if count <= 0:
             break
         time.sleep(5 + random.randint(5, 10))
 
-    ## step.比对商品列表
-    difflib
-    file1 = open(savepath_today, 'u').readlines()
-    file2 = open(savepath_yesterday, 'u').readlines()
-    diff = difflib.ndiff(file1, file2)
+    ## step.比对商品列表并获取上新物品
+    list1 = open(savepath_today, 'r', encoding='utf-8').readlines()
+    logger.info(savepath_today + "->" + str(len(list1)))
+    list2 = open(savepath_yesterday, 'r', encoding='utf-8').readlines()
+    logger.info(savepath_yesterday + "->" + str(len(list2)))
+    dailyUpdate = set(list1).difference(set(list2)) # 差集，在list1中但不在list2中的元素
 
-    sys.stdout.writelines(diff)
-
-
-    ## step.获取上新物品
-
-def getDay(offset):
-    now_time = datetime.datetime.now()
-    yes_time = now_time + datetime.timedelta(days=offset)
-    uuid_str = yes_time.strftime('%Y%m%d')  # 格式化输出
-    return uuid_str
-
-def getYesterday():
-    now_time = datetime.datetime.now()
-    yes_time = now_time + datetime.timedelta(days=-1)
-    uuid_str = yes_time.strftime('%Y%m%d')  # 格式化输出
-    return uuid_str
-
-def getTomorrow():
-    now_time = datetime.datetime.now()
-    yes_time = now_time + datetime.timedelta(days=1)
-    uuid_str = yes_time.strftime('%Y%m%d')  # 格式化输出
-    return uuid_str
+    ## step.发送email邮件通知
+    mailGoods(dailyUpdate)
 
 
-def getToday():
-    # uuid_str = time.strftime("%Y-%m-%d %H-%M-%S", time.localtime())
-    uuid_str = time.strftime("%Y%m%d", time.localtime())
-    return uuid_str
+
 
 
 def saveGoods(page, savepath):
@@ -111,7 +90,7 @@ def saveGoods(page, savepath):
         "ru_id": "86517"}
     response_data = request_post(post_url, request_param)
     for good in response_data["data"]:
-        print(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"])
+        logger.info(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"])
         f = open(savepath, 'a', encoding='utf-8')
         f.write(
             good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"] + "\n")
@@ -143,7 +122,7 @@ def request_post(url, param):
                 continue
         except:
             fails += 1
-            print('网络连接出现问题, 正在尝试再次请求: ', fails)
+            logger.info('网络连接出现问题, 正在尝试再次请求: ', fails)
             time.sleep(5)
         else:
             break
@@ -160,13 +139,13 @@ def askURL(url):
     try:
         response = urllib.request.urlopen(request)
         html = response.read().decode("utf-8")
-        # print(html)
+        # logger.info(html)
 
     except urllib.error.URLError as e:
         if hasattr(e, "code"):
-            print(e.code)
+            logger.info(e.code)
         if hasattr(e, "reason"):
-            print(e.reason)
+            logger.info(e.reason)
     return html
 
 
