@@ -59,9 +59,9 @@ def doMain():
     ## step.比对商品列表并获取上新物品
     print('step.比对商品列表并获取上新物品')
     list1 = open(savepath_today, 'r', encoding='utf-8').readlines()
-    logger.info(savepath_today + "->" + str(len(list1)))
+    print(savepath_today + "->" + str(len(list1)))
     list2 = open(savepath_yesterday, 'r', encoding='utf-8').readlines()
-    logger.info(savepath_yesterday + "->" + str(len(list2)))
+    print(savepath_yesterday + "->" + str(len(list2)))
     dailyUpdate = set(list1).difference(set(list2))  # 差集，在list1中但不在list2中的元素
 
     ## step.发送email邮件通知
@@ -89,7 +89,7 @@ def saveGoods(page, savepath):
         "ru_id": "86517"}
     response_data = request_post(post_url, request_param)
     for good in response_data["data"]:
-        logger.info(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"])
+        print(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"])
         f = open(savepath, 'a', encoding='utf-8')
         f.write(
             good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"] + "\n")
@@ -121,7 +121,7 @@ def request_post(url, param):
                 continue
         except:
             fails += 1
-            logger.info('网络连接出现问题, 正在尝试再次请求: ', fails)
+            print('网络连接出现问题, 正在尝试再次请求: ', fails)
             time.sleep(5)
         else:
             break
@@ -138,13 +138,13 @@ def askURL(url):
     try:
         response = urllib.request.urlopen(request)
         html = response.read().decode("utf-8")
-        # logger.info(html)
+        # print(html)
 
     except urllib.error.URLError as e:
         if hasattr(e, "code"):
-            logger.info(e.code)
+            print(e.code)
         if hasattr(e, "reason"):
-            logger.info(e.reason)
+            print(e.reason)
     return html
 
 
