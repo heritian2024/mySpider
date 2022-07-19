@@ -1,4 +1,4 @@
-
+import os
 import urllib.error
 import urllib.request
 import json
@@ -13,8 +13,8 @@ from mail_zhenfuli import mailGoods
 
 logger = logging.getLogger(__name__)
 # 范围时间
-range_time_start = '23:00'
-range_time_end = '24:00'
+range_time_start = ' 23:00'
+range_time_end = ' 24:00'
 
 
 def main():
@@ -23,19 +23,18 @@ def main():
         n_time = datetime.datetime.now()
         logger.info('*****************************************')
         logger.info('爬虫轮次开始：{}'.format(n_time))
+        print('爬虫轮次开始：{}'.format(n_time))
         logger.info('*****************************************')
         # 判断当前时间是否在范围时间内
-        range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date()) +' '+ range_time_start,
-                                                  '%Y-%m-%d %H:%M')
-        range_time_e = datetime.datetime.strptime(str(datetime.datetime.now().date()) +' ' + range_time_end,
-                                                  '%Y-%m-%d %H:%M')
-        if n_time > range_time_s and n_time < range_time_e:
-            doMain()
-            # 休眠60*(45~75)秒
-            time.sleep(60 * random.randint(45, 75))
-        else:
-            # 休眠60*60秒
+        targetFilename = 'zhenfuliGoods_%s.txt' % getToday()
+        if os.path.exists(targetFilename):
+            print('文件已存在，跳过此轮次：{}'.format(targetFilename))
             time.sleep(2 * 60 * 60)
+            continue
+        else:
+            print('当日未进行数据获取，进入Main函数')
+            doMain()
+
 
 
 def doMain():
@@ -45,6 +44,7 @@ def doMain():
     logger.info("yesterday >>" + savepath_yesterday)
 
     ## step.获取所有商品
+    print('step.获取所有商品')
     # cat_id: 55180
     default_max_page = 100
     default_start_page = 0
@@ -57,17 +57,16 @@ def doMain():
         time.sleep(5 + random.randint(5, 10))
 
     ## step.比对商品列表并获取上新物品
+    print('step.比对商品列表并获取上新物品')
     list1 = open(savepath_today, 'r', encoding='utf-8').readlines()
     logger.info(savepath_today + "->" + str(len(list1)))
     list2 = open(savepath_yesterday, 'r', encoding='utf-8').readlines()
     logger.info(savepath_yesterday + "->" + str(len(list2)))
-    dailyUpdate = set(list1).difference(set(list2)) # 差集，在list1中但不在list2中的元素
+    dailyUpdate = set(list1).difference(set(list2))  # 差集，在list1中但不在list2中的元素
 
     ## step.发送email邮件通知
+    print('step.发送email邮件通知')
     mailGoods(dailyUpdate)
-
-
-
 
 
 def saveGoods(page, savepath):
