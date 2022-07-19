@@ -25,10 +25,10 @@ def main():
         logger.info('爬虫轮次开始：{}'.format(n_time))
         logger.info('*****************************************')
         # 判断当前时间是否在范围时间内
-        range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date()) + range_time_start,
-                                                  '%Y-%m-%d%H:%M')
-        range_time_e = datetime.datetime.strptime(str(datetime.datetime.now().date()) + range_time_end,
-                                                  '%Y-%m-%d%H:%M')
+        range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date()) +' '+ range_time_start,
+                                                  '%Y-%m-%d %H:%M')
+        range_time_e = datetime.datetime.strptime(str(datetime.datetime.now().date()) +' ' + range_time_end,
+                                                  '%Y-%m-%d %H:%M')
         if n_time > range_time_s and n_time < range_time_e:
             doMain()
             # 休眠60*(45~75)秒
