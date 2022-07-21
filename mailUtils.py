@@ -6,15 +6,14 @@ from logging.handlers import SMTPHandler
 
 from sender import Mail, Message
 from dayUtils import getToday
-import config
 
 logger = logging.getLogger(__name__)
 
-sender = config.mail['sender']
-host = config.mail['host']
-password = config.mail['password']
-receivers = config.mail['receivers']
-subject_prefix = config.mail['subject_prefix']
+sender = 'watch_ch@163.com'
+host = 'smtp.163.com'
+password = 'ch20103314'
+subject_prefix = '真福利'
+receivers = ['chenhe2018@qq.com', '859789528@qq.com']
 
 
 def add_error_log_mail_handler(logger, system):
@@ -47,12 +46,11 @@ def send_mail(subject, to, content, cc=None, type='plain', system='自动'):
                   fromaddr=sender)
     mail.send(msg)
 
-def mailGoods(tmpList):
+def mailGoods(tmpDict, mail_title):
     tmpDiv = ''
-    for l in tmpList:
-        strs = l.replace('\n', '').split('\t')
-        tmpDiv += ('<div>' + '<a href="' + strs[1] + '">' + strs[0] + " : " + strs[2] + "(" + strs[
-            3] + ")" + '</a>' + '</div>\n')
+    for good in tmpDict.values():
+        tmpDiv += ('<div>' + '<a href="' + good['link'] + '">' + good['name'] + " : " + good['label'] + "(" + good[
+            'price'] + ")" + '</a>' + '</div>\n')
 
     content = '''
      <html>
@@ -61,19 +59,19 @@ def mailGoods(tmpList):
          </head>
          <body>
              <div>
-                 每日上新-{day}
+                 {title}-{day}
              </div>
              {div}
          </body>
      </html>
-     '''.format(day=getToday(), div=tmpDiv)
+     '''.format(title=mail_title,day=getToday(), div=tmpDiv)
     print(content)
     send_mail(
         to=receivers,
         subject=getToday(),
         content=content,
         type='html',
-        system='真福利每日上新'
+        system=mail_title
     )
 
 if __name__ == '__main__':

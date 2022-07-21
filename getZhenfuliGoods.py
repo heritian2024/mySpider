@@ -9,7 +9,8 @@ import datetime
 import logging
 
 from dayUtils import getToday, getYesterday
-from mail_zhenfuli import mailGoods
+from mailUtils import mailGoods
+from diffUtils import compareGoods
 
 logger = logging.getLogger(__name__)
 # 范围时间
@@ -36,7 +37,6 @@ def main():
             doMain()
 
 
-
 def doMain():
     savepath_today = 'zhenfuliGoods_%s.txt' % getToday()
     savepath_yesterday = 'zhenfuliGoods_%s.txt' % getYesterday()
@@ -57,16 +57,20 @@ def doMain():
         time.sleep(5 + random.randint(5, 10))
 
     ## step.比对商品列表并获取上新物品
-    print('step.比对商品列表并获取上新物品')
-    list1 = open(savepath_today, 'r', encoding='utf-8').readlines()
-    print(savepath_today + "->" + str(len(list1)))
-    list2 = open(savepath_yesterday, 'r', encoding='utf-8').readlines()
-    print(savepath_yesterday + "->" + str(len(list2)))
-    dailyUpdate = set(list1).difference(set(list2))  # 差集，在list1中但不在list2中的元素
+    try:
+        dict_new, dict_rise, dict_drop = compareGoods(savepath_yesterday, savepath_today)
+    except:
+        print('文件比对失败')
+        return
 
     ## step.发送email邮件通知
     print('step.发送email邮件通知')
-    mailGoods(dailyUpdate)
+    if bool(dict_new):
+        mailGoods(dict_new, '每日上新')
+    if bool(dict_rise):
+        mailGoods(dict_rise, '每日涨价')
+    if bool(dict_drop):
+        mailGoods(dict_drop, '每日降价')
 
 
 def saveGoods(page, savepath):

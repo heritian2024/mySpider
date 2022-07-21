@@ -6,7 +6,7 @@ mail = {
     'host': 'smtp.163.com',
     'password': 'ch20103314',
     'subject_prefix': '豆瓣爬虫租房',
-    'receivers': ['chenhe2018@qq.com'],
+    'receivers': ['chenhe2018@qq.com', '859789528@qq.com'],
 }
 
 groups = [
