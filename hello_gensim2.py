@@ -52,11 +52,13 @@ words_count = words_count.reset_index().sort_values(by=['count'], ascending=Fals
 from gensim import corpora, models, similarities
 import gensim
 
+num_topics = 3
+
 dictionary = corpora.Dictionary(contents_clean)
 corpus = [dictionary.doc2bow(sentence) for sentence in contents_clean]
-lda = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dictionary, num_topics=3, random_state=3)
+lda = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dictionary, num_topics=num_topics, random_state=3)
 
-print(lda.print_topics(num_topics=3, num_words=3))
+print(lda.print_topics(num_topics=num_topics, num_words=3))
 # 预测文本的主题
 for e, values in enumerate(lda.inference(corpus)[0]):
     print(content[e])
