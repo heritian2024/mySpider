@@ -46,6 +46,7 @@ def send_mail(subject, to, content, cc=None, type='plain', system='自动'):
                   fromaddr=sender)
     mail.send(msg)
 
+
 def mailGoods(tmpDict, mail_title):
     tmpDiv = ''
     for good in tmpDict.values():
@@ -64,7 +65,7 @@ def mailGoods(tmpDict, mail_title):
              {div}
          </body>
      </html>
-     '''.format(title=mail_title,day=getToday(), div=tmpDiv)
+     '''.format(title=mail_title, day=getToday(), div=tmpDiv)
     print(content)
     send_mail(
         to=receivers,
@@ -73,6 +74,7 @@ def mailGoods(tmpDict, mail_title):
         type='html',
         system=mail_title
     )
+
 
 if __name__ == '__main__':
     tmpList = {'伊利 苦咖啡冰淇淋童年怀旧冷饮脆皮雪糕70克*6支*2盒\thttps://jifen.zhenfuli.com/mobile/#/goods/1219319\t¥49.90\t43.41\n',
