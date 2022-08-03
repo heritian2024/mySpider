@@ -2,7 +2,7 @@ import difflib
 import sys
 
 from dayUtils import getDay
-
+from mailUtils import mailGoods
 
 class Good:
     def __init__(self, name, link, label, price):
@@ -34,7 +34,8 @@ def compareGoods(originfile, targetfile):
             'name': name_target,
             'link': link_target,
             'label': label_target,
-            'price': price_target
+            'price': price_target,
+            'classify': ''
         }
 
     dict_new = {}  # 新增
@@ -49,6 +50,7 @@ def compareGoods(originfile, targetfile):
         link_target = gooditem[1]
         label_target = gooditem[2]
         price_target = gooditem[3]
+        classify_target = gooditem[4]
         # print(name_target)
         # print(link_target)
         # print(label_target)
@@ -58,7 +60,8 @@ def compareGoods(originfile, targetfile):
                 'name': name_target,
                 'link': link_target,
                 'label': label_target,
-                'price': price_target
+                'price': price_target,
+                'classify': classify_target
             }
         else:
             change_good = dict_origin[link_target]
@@ -68,14 +71,16 @@ def compareGoods(originfile, targetfile):
                     'name': name_target,
                     'link': link_target,
                     'label': change_good['label'] + '->' + label_target,
-                    'price': change_good['price'] + '->' + price_target
+                    'price': change_good['price'] + '->' + price_target,
+                    'classify': classify_target
                 }
             elif float(price_target) < float(change_good['price']):
                 dict_drop[link_target] = {
                     'name': name_target,
                     'link': link_target,
                     'label': change_good['label'] + '->' + label_target,
-                    'price': change_good['price'] + '->' + price_target
+                    'price': change_good['price'] + '->' + price_target,
+                    'classify': classify_target
                 }
     return dict_new, dict_rise, dict_drop
 
@@ -83,8 +88,8 @@ def compareGoods(originfile, targetfile):
 if __name__ == '__main__':
     # savepath_today = 'zhenfuliGoods_%s.txt' % getDay(-1)
     # savepath_yesterday = 'zhenfuliGoods_%s.txt' % getDay(-2)
-    savepath_today = 'zhenfuliGoods_20220718.txt'
-    savepath_yesterday = 'zhenfuliGoods_20220717.txt'
+    savepath_today = 'zhenfuliGoods_20220804.txt'
+    savepath_yesterday = 'zhenfuliGoods_20220803.txt'
 
     dict_new, dict_rise, dict_drop = compareGoods(savepath_yesterday, savepath_today)
 
@@ -94,3 +99,12 @@ if __name__ == '__main__':
     print(dict_rise)
     print('每日降价：')
     print(dict_drop)
+
+    ## step.发送email邮件通知
+    print('step.发送email邮件通知')
+    # if bool(dict_new):
+    #     mailGoods(dict_new, '每日上新')
+    # if bool(dict_rise):
+    #     mailGoods(dict_rise, '每日涨价')
+    if bool(dict_drop):
+        mailGoods(dict_drop, '每日降价')

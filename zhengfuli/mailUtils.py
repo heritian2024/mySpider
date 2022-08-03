@@ -49,8 +49,11 @@ def send_mail(subject, to, content, cc=None, type='plain', system='自动'):
 
 def mailGoods(tmpDict, mail_title):
     tmpDiv = ''
-    for good in tmpDict.values():
-        tmpDiv += ('<div>' + '<a href="' + good['link'] + '">' + good['name'] + " : " + good['label'] + "(" + good[
+    sortedDict = sorted(tmpDict.items(), key=lambda x: x[1]['classify'])
+    print('排序后数据：%s' % sortedDict)
+    for good in sortedDict:
+        # print(good[1])
+        tmpDiv += ('<div>' + '<a href="'+ good[1]['link'] + '">' + good[1]['classify'] + '##' + good[1]['name'] + " : " + good[1]['label'] + "(" + good[1][
             'price'] + ")" + '</a>' + '</div>\n')
 
     content = '''

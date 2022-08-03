@@ -94,9 +94,9 @@ def saveGoods(page, savepath):
     response_data = request_post(post_url, request_param)
     # print(response_data)
     for good in response_data["data"]:
-        print(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"] + "\t" + good["user_cat"])
+        print(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"] + "\t" + str(good["user_cat"]))
         f = open(savepath, 'a', encoding='utf-8')
-        f.write(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"] + "\t" + good["user_cat"] + "\n")
+        f.write(good["goods_name"] + "\t" + good["url"] + "\t" + good["market_price"] + "\t" + good["shop_price"] + "\t" + str(good["user_cat"]) + "\n")
         f.flush()
         f.close()
     return len(response_data["data"])
