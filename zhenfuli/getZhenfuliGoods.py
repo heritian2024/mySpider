@@ -14,9 +14,8 @@ from diffUtils import compareGoods
 
 logger = logging.getLogger(__name__)
 # 范围时间
-range_time_start = ' 23:00'
-range_time_end = ' 24:00'
-
+range_time_start = '11:00'
+# range_time_end = '13:00'
 
 def main():
     while True:
@@ -33,8 +32,14 @@ def main():
             time.sleep(2 * 60 * 60)
             continue
         else:
-            print('当日未进行数据获取，进入Main函数')
-            doMain()
+            # 大于指定时间再执行job
+            range_time_s = datetime.datetime.strptime(str(datetime.datetime.now().date()) + range_time_start,
+                                                      '%Y-%m-%d%H:%M')
+            if n_time > range_time_s:
+                print('当日未进行数据获取，进入Main函数')
+                doMain()
+            else:
+                print('未到目标时间，跳过此轮循环')
 
 
 def doMain():
